@@ -1,0 +1,37 @@
+fatal: not a git repository (or any of the parent directories): .git
+CMake Deprecation Warning at fltk/CMakeLists.txt:37 (cmake_policy):
+  The OLD behavior for policy CMP0072 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+    OpenGL_GL_PREFERENCE
+
+
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(arm_init.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(arm_init.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(Fl_Help_Dialog_Dox.cxx.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(fl_overlay_visual.cxx.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(Fl_Help_Dialog_Dox.cxx.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(fl_overlay_visual.cxx.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(arm_init.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk.a(Fl_Help_Dialog_Dox.cxx.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk.a(fl_overlay_visual.cxx.o) has no symbols
+fatal: not a git repository (or any of the parent directories): .git
