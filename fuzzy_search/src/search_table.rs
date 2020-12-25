@@ -33,12 +33,10 @@ fn closest_multiple(mut n: i32, mut x: i32) -> i32 {
 
 fn format_table(num_cols: u32, p_width: i32, t: &Table, item_count: usize){
     let mut tc = t.clone();
-    // println!("closet multiple is {}", closest_multiple(item_count as i32, num_cols as i32));
     println!("closet multiple is {}", closest_multiple(num_cols as i32, item_count as i32));
     tc.set_rows(20);
     tc.set_cols(num_cols);
     tc.set_row_height_all(90);
-    // tc.set_col_width_all((p_width/num_cols as i32)-1);
     tc.set_col_width_all((p_width/num_cols as i32));
 }
 
@@ -49,18 +47,18 @@ impl SearchTable{
             values: s_items.clone(), 
             items: all_items.clone(),
         };
-        format_table(8, w, &st.table, all_items.len());        
-
         let ic = st.items.clone(); 
+        
+        format_table(8, w, &st.table, ic.len());        
         st.table.draw_cell2(move |t, ctx, row, col, x, y, w, h| match ctx {
             TableContext::Cell => {
                 let t_index = row*t.cols() as i32+ col;
-                // let mut button = TableButton::new(x,y,w,h, &all_items[t_index as usize]);
                 let mut button = TableButton::new(x,y,w,h, &ic[t_index as usize]);
                 t.add(&button.wid);
             },
             _ => ()
         });
+        
         //we need to send a message to redraw the app after the table has been drawn
         s.send(Message::RedrawTable);
         st.table.end();
@@ -93,15 +91,18 @@ impl SearchTable{
     
     }
     //reset table to show all values
-    pub fn reset(&mut self, s: fltk::app::Sender<Message>, all_items: Vec<String>){
+    // pub fn reset(&mut self, s: fltk::app::Sender<Message>, all_items: Vec<String>){
+    pub fn reset(&mut self, s: fltk::app::Sender<Message>){
         println!("{}", "should reset table" );
-        format_table(8, self.table.width(), &self.table, all_items.len());       
+        fltk::GroupExt::clear(&mut self.table);
+        format_table(8, self.table.width(), &self.table, self.items.len());   
+        let ric = self.items.clone();    
         self.table.draw_cell2(move |t, ctx, row, col, x, y, w, h| match ctx {
             TableContext::Cell => {
                 let t_index = row*t.cols() as i32 + col;
-                println!("all items len at reset is {}", all_items.len().to_string());
-                if t_index < all_items.len() as i32 {
-                    let mut button = TableButton::new(x,y,w,h, &all_items[t_index as usize]);
+                println!("all items len at reset is {}", ric.len().to_string());
+                if t_index < ric.len() as i32 {
+                    let mut button = TableButton::new(x,y,w,h, &ric[t_index as usize]);
                     button.set_callback2(|b| println!("Selected: {}", b.label()));
                     t.add(&button.wid);  
                 }
@@ -109,6 +110,11 @@ impl SearchTable{
             _ => ()
         });
         s.send(Message::RedrawTable);
+    }
+
+    pub fn set_items(&mut self, new_items: Vec<String>){
+        self.items = new_items.clone();
+        println!("new set items are {:?}", new_items);
     }
 
 }

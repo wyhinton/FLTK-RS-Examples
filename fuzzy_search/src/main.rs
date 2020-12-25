@@ -40,19 +40,15 @@ fn random_string_arr(n_strings: i32, min_str_length: i32, max_str_length: i32) -
  }
 
 fn main() {
-    let tst = random_string_arr(200, 5, 30); 
-
-    println!("{:?}", tst);
     let app = App::default();
     let (s, r) = channel::<Message>();
     let mut win = Window::new(200, 200, 1000, 1000, "Fuzzy Search");
     let initial_amount = 100; 
     let initial_strings = random_string_arr(initial_amount, 5, 30);
 
-
     let sb_width = 600;
-    let mut sb = SearchBar::new((win.width()/2)-sb_width/2,200,sb_width,25, tst.clone(), s.clone());
-    let mut table = SearchTable::new(sb.x(),sb.y()+sb.height(), sb_width, 500, tst.clone(), vec![], s.clone()) ;
+    let mut sb = SearchBar::new((win.width()/2)-sb_width/2,200,sb_width,25, initial_strings.clone(), s.clone());
+    let mut table = SearchTable::new(sb.x(),sb.y()+sb.height(), sb_width, 500, initial_strings.clone(), vec![], s.clone()) ;
 
     let ip_width = 100;
     let input_pack = Pack::new(win.width()/2 - ip_width/2, 100, ip_width, 50, "");
@@ -85,17 +81,19 @@ fn main() {
                     println!("results at main are {:?}", results);
                     println!("{}", "got update search message");
                     table.update(results.clone(), s.clone());
-                    // app::redraw();
                 }
                 RedrawTable => {
                     table.redraw();
                 }
                 ResetTable => {
-                    table.reset(s.clone(), tst.clone());
+                    table.reset(s.clone());
                 }
                 SetNumStrings(num) => {
                     let nr = random_string_arr(num, 5, 20);
-                    println!("new randoms are {:?}", nr);
+                    table.set_items(nr.clone());
+                    sb.set_items(nr.clone(), s.clone());
+                    table.reset(s.clone());
+                    
                 }
             }
         }
