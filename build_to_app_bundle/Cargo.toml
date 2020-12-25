@@ -1,0 +1,23 @@
+[package]
+name = "build_to_app_bundle"
+version = "0.1.0"
+authors = ["wyhinton <wyhinton189@gmail.com>"]
+edition = "2018"
+description = "my application"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fltk = "0.12.0"
+
+
+[package.metadata.bundle]
+name = "My Application"
+identifer = "com.test.myapp"
+icon = ["icon32x32.png", "app_icon", "app_icon@2x.png"]
+version = "1.0.0"
+copyright = "Copyright (c) Jane Doe 2016. All rights reserved."
+resources = ["imgs"]
+category = "Developer Tool"
+descrition = "my application"
+short_description = "An example application."
