@@ -1,0 +1,621 @@
+The system is: Darwin - 20.2.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: ;-ffunction-sections;-fdata-sections;-fPIC;-m64;-arch;x86_64
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/3.19.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: ;-ffunction-sections;-fdata-sections;-fPIC;-m64;-arch;x86_64
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/3.19.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0a33b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0a33b.dir/build.make CMakeFiles/cmTC_0a33b.dir/build
+Building C object CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin20.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.1 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.8 -v -ffunction-sections -fdata-sections -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdebug-compilation-dir /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.0 (clang-1200.0.32.28) default target x86_64-apple-darwin20.2.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include
+ /Library/Developer/CommandLineTools/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_0a33b
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a33b.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -o cmTC_0a33b 
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin20.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o cmTC_0a33b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-609.8
+BUILD 20:09:52 Nov  4 2020
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+    add: [/Library/Developer/CommandLineTools/usr/include]
+  end of search list found
+  collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+  implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_0a33b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0a33b.dir/build.make CMakeFiles/cmTC_0a33b.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -v -Wl -v -o CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.28)]
+  ignore line: [Target: x86_64-apple-darwin20.2.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.1 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.8 -v -ffunction-sections -fdata-sections -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdebug-compilation-dir /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 12.0.0 (clang-1200.0.32.28) default target x86_64-apple-darwin20.2.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_0a33b]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a33b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -o cmTC_0a33b ]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.28)]
+  ignore line: [Target: x86_64-apple-darwin20.2.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o cmTC_0a33b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.0.0] ==> ignore
+    arg [11.1] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0a33b] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_0a33b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eec25/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eec25.dir/build.make CMakeFiles/cmTC_eec25.dir/build
+Building CXX object CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin20.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/c++/v1"
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.1 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.8 -v -ffunction-sections -fdata-sections -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdeprecated-macro -fdebug-compilation-dir /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 12.0.0 (clang-1200.0.32.28) default target x86_64-apple-darwin20.2.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include
+ /Library/Developer/CommandLineTools/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_eec25
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec25.dir/link.txt --verbose=1
+/usr/bin/c++  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eec25 
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin20.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o cmTC_eec25 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-609.8
+BUILD 20:09:52 Nov  4 2020
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1]
+    add: [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+    add: [/Library/Developer/CommandLineTools/usr/include]
+  end of search list found
+  collapse include dir [/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1] ==> [/Library/Developer/CommandLineTools/usr/include/c++/v1]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+  collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+  implicit include dirs: [/Library/Developer/CommandLineTools/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_eec25/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eec25.dir/build.make CMakeFiles/cmTC_eec25.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk   -v -Wl -v -o CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.28)]
+  ignore line: [Target: x86_64-apple-darwin20.2.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/c++/v1"]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx11.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mframe-pointer=all -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=11.1 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 609.8 -v -ffunction-sections -fdata-sections -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -fdeprecated-macro -fdebug-compilation-dir /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fobjc-runtime=macosx-11.0.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 12.0.0 (clang-1200.0.32.28) default target x86_64-apple-darwin20.2.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_eec25]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec25.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eec25 ]
+  ignore line: [Apple clang version 12.0.0 (clang-1200.0.32.28)]
+  ignore line: [Target: x86_64-apple-darwin20.2.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o cmTC_eec25 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.0.0] ==> ignore
+    arg [11.1] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_eec25] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_eec25.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_32ed9/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_32ed9.dir/build.make CMakeFiles/cmTC_32ed9.dir/build
+Building C object CMakeFiles/cmTC_32ed9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_32ed9.dir/CheckIncludeFile.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_32ed9
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32ed9.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32ed9.dir/CheckIncludeFile.c.o -o cmTC_32ed9 
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_982cf/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_982cf.dir/build.make CMakeFiles/cmTC_982cf.dir/build
+Building C object CMakeFiles/cmTC_982cf.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_982cf.dir/CheckIncludeFile.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_982cf
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_982cf.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_982cf.dir/CheckIncludeFile.c.o -o cmTC_982cf 
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c17d7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c17d7.dir/build.make CMakeFiles/cmTC_c17d7.dir/build
+Building C object CMakeFiles/cmTC_c17d7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_c17d7.dir/CheckIncludeFile.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c17d7
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c17d7.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c17d7.dir/CheckIncludeFile.c.o -o cmTC_c17d7 
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d374/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2d374.dir/build.make CMakeFiles/cmTC_2d374.dir/build
+Building C object CMakeFiles/cmTC_2d374.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_2d374.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_2d374
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d374.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2d374.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -o cmTC_2d374 
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3bacb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3bacb.dir/build.make CMakeFiles/cmTC_3bacb.dir/build
+Building C object CMakeFiles/cmTC_3bacb.dir/TestEndianess.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_3bacb.dir/TestEndianess.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_3bacb
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bacb.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3bacb.dir/TestEndianess.c.o -o cmTC_3bacb 
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of short passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2174/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a2174.dir/build.make CMakeFiles/cmTC_a2174.dir/build
+Building C object CMakeFiles/cmTC_a2174.dir/SIZEOF_SHORT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_a2174.dir/SIZEOF_SHORT.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckTypeSize/SIZEOF_SHORT.c
+Linking C executable cmTC_a2174
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2174.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_a2174.dir/SIZEOF_SHORT.c.o -o cmTC_a2174 
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc77d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dc77d.dir/build.make CMakeFiles/cmTC_dc77d.dir/build
+Building C object CMakeFiles/cmTC_dc77d.dir/SIZEOF_INT.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_dc77d.dir/SIZEOF_INT.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_dc77d
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc77d.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_dc77d.dir/SIZEOF_INT.c.o -o cmTC_dc77d 
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f906/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4f906.dir/build.make CMakeFiles/cmTC_4f906.dir/build
+Building C object CMakeFiles/cmTC_4f906.dir/SIZEOF_LONG.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_4f906.dir/SIZEOF_LONG.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_4f906
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f906.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_4f906.dir/SIZEOF_LONG.c.o -o cmTC_4f906 
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e1ac7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e1ac7.dir/build.make CMakeFiles/cmTC_e1ac7.dir/build
+Building C object CMakeFiles/cmTC_e1ac7.dir/HAVE_LONG_LONG.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_e1ac7.dir/HAVE_LONG_LONG.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckTypeSize/HAVE_LONG_LONG.c
+Linking C executable cmTC_e1ac7
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1ac7.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_e1ac7.dir/HAVE_LONG_LONG.c.o -o cmTC_e1ac7 
+
+
+
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_687a2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_687a2.dir/build.make CMakeFiles/cmTC_687a2.dir/build
+Building C object CMakeFiles/cmTC_687a2.dir/HAVE_DLFCN_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_687a2.dir/HAVE_DLFCN_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_DLFCN_H.c
+Linking C executable cmTC_687a2
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_687a2.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_687a2.dir/HAVE_DLFCN_H.c.o -o cmTC_687a2 
+
+
+
+Determining if files locale.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3b299/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3b299.dir/build.make CMakeFiles/cmTC_3b299.dir/build
+Building C object CMakeFiles/cmTC_3b299.dir/HAVE_LOCALE_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_3b299.dir/HAVE_LOCALE_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_LOCALE_H.c
+Linking C executable cmTC_3b299
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b299.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_3b299.dir/HAVE_LOCALE_H.c.o -o cmTC_3b299 
+
+
+
+Determining if files OpenGL/glu.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3a34/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e3a34.dir/build.make CMakeFiles/cmTC_e3a34.dir/build
+Building C object CMakeFiles/cmTC_e3a34.dir/HAVE_OPENGL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_e3a34.dir/HAVE_OPENGL_GLU_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLU_H.c
+Linking C executable cmTC_e3a34
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3a34.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_e3a34.dir/HAVE_OPENGL_GLU_H.c.o -o cmTC_e3a34 
+
+
+
+Determining if files stdio.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c768f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c768f.dir/build.make CMakeFiles/cmTC_c768f.dir/build
+Building C object CMakeFiles/cmTC_c768f.dir/HAVE_STDIO_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_c768f.dir/HAVE_STDIO_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_STDIO_H.c
+Linking C executable cmTC_c768f
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c768f.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_c768f.dir/HAVE_STDIO_H.c.o -o cmTC_c768f 
+
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_454a6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_454a6.dir/build.make CMakeFiles/cmTC_454a6.dir/build
+Building C object CMakeFiles/cmTC_454a6.dir/HAVE_STRINGS_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_454a6.dir/HAVE_STRINGS_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_STRINGS_H.c
+Linking C executable cmTC_454a6
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_454a6.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_454a6.dir/HAVE_STRINGS_H.c.o -o cmTC_454a6 
+
+
+
+Determining if files sys/select.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af5df/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_af5df.dir/build.make CMakeFiles/cmTC_af5df.dir/build
+Building C object CMakeFiles/cmTC_af5df.dir/HAVE_SYS_SELECT_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_af5df.dir/HAVE_SYS_SELECT_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SELECT_H.c
+Linking C executable cmTC_af5df
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af5df.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_af5df.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_af5df 
+
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7395f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7395f.dir/build.make CMakeFiles/cmTC_7395f.dir/build
+Building C object CMakeFiles/cmTC_7395f.dir/HAVE_PTHREAD_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_7395f.dir/HAVE_PTHREAD_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_H.c
+Linking C executable cmTC_7395f
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7395f.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_7395f.dir/HAVE_PTHREAD_H.c.o -o cmTC_7395f 
+
+
+
+Determining if the function dlsym exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4500b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4500b.dir/build.make CMakeFiles/cmTC_4500b.dir/build
+Building C object CMakeFiles/cmTC_4500b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=dlsym -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_4500b.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4500b
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4500b.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=dlsym -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_4500b.dir/CheckFunctionExists.c.o -o cmTC_4500b 
+
+
+
+Determining if the function localeconv exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bcc3d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bcc3d.dir/build.make CMakeFiles/cmTC_bcc3d.dir/build
+Building C object CMakeFiles/cmTC_bcc3d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=localeconv -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_bcc3d.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bcc3d
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcc3d.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=localeconv -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_bcc3d.dir/CheckFunctionExists.c.o -o cmTC_bcc3d 
+
+
+
+Determining if the function png_get_valid exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aef91/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_aef91.dir/build.make CMakeFiles/cmTC_aef91.dir/build
+Building C object CMakeFiles/cmTC_aef91.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=png_get_valid -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_aef91.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aef91
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aef91.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=png_get_valid -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_aef91.dir/CheckFunctionExists.c.o -o cmTC_aef91  /usr/local/lib/libpng.dylib 
+
+
+
+Determining if the function png_set_tRNS_to_alpha exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_638ef/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_638ef.dir/build.make CMakeFiles/cmTC_638ef.dir/build
+Building C object CMakeFiles/cmTC_638ef.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_638ef.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_638ef
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_638ef.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_638ef.dir/CheckFunctionExists.c.o -o cmTC_638ef  /usr/local/lib/libpng.dylib 
+
+
+
+Determining if the function strlcat exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7f453/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7f453.dir/build.make CMakeFiles/cmTC_7f453.dir/build
+Building C object CMakeFiles/cmTC_7f453.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=strlcat -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_7f453.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+/Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcat
+                              ^
+/Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c:7:3: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcat
+                              ^
+1 warning generated.
+Linking C executable cmTC_7f453
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f453.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=strlcat -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_7f453.dir/CheckFunctionExists.c.o -o cmTC_7f453 
+
+
+
+Determining if the function strlcpy exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b71dc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b71dc.dir/build.make CMakeFiles/cmTC_b71dc.dir/build
+Building C object CMakeFiles/cmTC_b71dc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=strlcpy -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_b71dc.dir/CheckFunctionExists.c.o -c /Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c
+/Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcpy
+                              ^
+/Applications/CMake.app/Contents/share/cmake-3.19/Modules/CheckFunctionExists.c:7:3: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcpy
+                              ^
+1 warning generated.
+Linking C executable cmTC_b71dc
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b71dc.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=strlcpy -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_b71dc.dir/CheckFunctionExists.c.o -o cmTC_b71dc 
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_482a1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_482a1.dir/build.make CMakeFiles/cmTC_482a1.dir/build
+Building C object CMakeFiles/cmTC_482a1.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_482a1.dir/CheckIncludeFile.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_482a1
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_482a1.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_482a1.dir/CheckIncludeFile.c.o -o cmTC_482a1 
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_96448/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_96448.dir/build.make CMakeFiles/cmTC_96448.dir/build
+Building C object CMakeFiles/cmTC_96448.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_96448.dir/src.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_96448
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96448.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa  CMakeFiles/cmTC_96448.dir/src.c.o -o cmTC_96448 
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

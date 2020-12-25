@@ -1,0 +1,149 @@
+Determining if files alsa/asoundlib.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ae0f1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ae0f1.dir/build.make CMakeFiles/cmTC_ae0f1.dir/build
+Building C object CMakeFiles/cmTC_ae0f1.dir/HAVE_ALSA_ASOUNDLIB_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_ae0f1.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_ALSA_ASOUNDLIB_H.c:2:10: fatal error: 'alsa/asoundlib.h' file not found
+#include <alsa/asoundlib.h>
+         ^~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ae0f1.dir/HAVE_ALSA_ASOUNDLIB_H.c.o] Error 1
+make: *** [cmTC_ae0f1/fast] Error 2
+
+
+Source:
+/* */
+#include <alsa/asoundlib.h>
+
+
+int main(void){return 0;}
+
+Determining if files GL/glu.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b108/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5b108.dir/build.make CMakeFiles/cmTC_5b108.dir/build
+Building C object CMakeFiles/cmTC_5b108.dir/HAVE_GL_GLU_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_5b108.dir/HAVE_GL_GLU_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_GL_GLU_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_GL_GLU_H.c:2:10: fatal error: 'GL/glu.h' file not found
+#include <GL/glu.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_5b108.dir/HAVE_GL_GLU_H.c.o] Error 1
+make: *** [cmTC_5b108/fast] Error 2
+
+
+Source:
+/* */
+#include <GL/glu.h>
+
+
+int main(void){return 0;}
+
+Determining if files libpng/png.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a535f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a535f.dir/build.make CMakeFiles/cmTC_a535f.dir/build
+Building C object CMakeFiles/cmTC_a535f.dir/HAVE_LIBPNG_PNG_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_a535f.dir/HAVE_LIBPNG_PNG_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_LIBPNG_PNG_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_LIBPNG_PNG_H.c:2:10: fatal error: 'libpng/png.h' file not found
+#include <libpng/png.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a535f.dir/HAVE_LIBPNG_PNG_H.c.o] Error 1
+make: *** [cmTC_a535f/fast] Error 2
+
+
+Source:
+/* */
+#include <libpng/png.h>
+
+
+int main(void){return 0;}
+
+Determining if files png.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_988a5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_988a5.dir/build.make CMakeFiles/cmTC_988a5.dir/build
+Building C object CMakeFiles/cmTC_988a5.dir/HAVE_PNG_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_988a5.dir/HAVE_PNG_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PNG_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PNG_H.c:2:10: fatal error: 'png.h' file not found
+#include <png.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_988a5.dir/HAVE_PNG_H.c.o] Error 1
+make: *** [cmTC_988a5/fast] Error 2
+
+
+Source:
+/* */
+#include <png.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/stdtypes.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_592ad/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_592ad.dir/build.make CMakeFiles/cmTC_592ad.dir/build
+Building C object CMakeFiles/cmTC_592ad.dir/HAVE_SYS_STDTYPES_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_592ad.dir/HAVE_SYS_STDTYPES_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: 'sys/stdtypes.h' file not found
+#include <sys/stdtypes.h>
+         ^~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_592ad.dir/HAVE_SYS_STDTYPES_H.c.o] Error 1
+make: *** [cmTC_592ad/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/stdtypes.h>
+
+
+int main(void){return 0;}
+
+Determining if files X11/Xlib.h;X11/Xregion.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_817e7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_817e7.dir/build.make CMakeFiles/cmTC_817e7.dir/build
+Building C object CMakeFiles/cmTC_817e7.dir/HAVE_X11_XREGION_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_817e7.dir/HAVE_X11_XREGION_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_X11_XREGION_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_X11_XREGION_H.c:2:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_817e7.dir/HAVE_X11_XREGION_H.c.o] Error 1
+make: *** [cmTC_817e7/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/Xregion.h>
+
+
+int main(void){return 0;}
+
+Determining if files X11/Xlib.h;X11/extensions/Xdbe.h exist failed with the following output:
+Change Dir: /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc2b3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cc2b3.dir/build.make CMakeFiles/cmTC_cc2b3.dir/build
+Building C object CMakeFiles/cmTC_cc2b3.dir/HAVE_XDBE_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/cmTC_cc2b3.dir/HAVE_XDBE_H.c.o -c /Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_XDBE_H.c
+/Users/webbhinton/my-fltk-examples/build_app/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/CMakeFiles/CheckIncludeFiles/HAVE_XDBE_H.c:2:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cc2b3.dir/HAVE_XDBE_H.c.o] Error 1
+make: *** [cmTC_cc2b3/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/extensions/Xdbe.h>
+
+
+int main(void){return 0;}
+
