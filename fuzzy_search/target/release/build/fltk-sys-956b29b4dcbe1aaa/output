@@ -60,316 +60,35 @@ running: "cmake" "/Users/webbhinton/.cargo/registry/src/github.com-1ecc6299db9ec
 -- Generating done
 -- Build files have been written to: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build
 running: "cmake" "--build" "." "--target" "install" "--config" "Release" "--"
-Scanning dependencies of target fltk_z
-Scanning dependencies of target fltk_jpeg
-[  0%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/adler32.c.o
-[  0%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jmemnobs.c.o
 Scanning dependencies of target cfltk
-[  0%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_new.cpp.o
 [  0%] Building CXX object CMakeFiles/cfltk.dir/src/cfl.cpp.o
-[  0%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jaricom.c.o
-[  1%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcomapi.c.o
-[  1%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jutils.c.o
-[  2%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/compress.c.o
-[  2%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jerror.c.o
-[  2%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/crc32.c.o
-[  3%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jmemmgr.c.o
-[  3%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/deflate.c.o
-[  3%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcapimin.c.o
-[  4%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcapistd.c.o
-[  4%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcarith.c.o
-[  4%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jctrans.c.o
-[  5%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcparam.c.o
-[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzclose.c.o
-[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzlib.c.o
-[  6%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzread.c.o
-[  6%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdatadst.c.o
-[  6%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcinit.c.o
-[  7%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/gzwrite.c.o
-[  8%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmaster.c.o
-[  8%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inflate.c.o
-[  8%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmarker.c.o
-[  8%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcmainct.c.o
-[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcprepct.c.o
-[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jccoefct.c.o
-[  9%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/infback.c.o
-[  9%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jccolor.c.o
-[ 10%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcsample.c.o
-[ 11%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inftrees.c.o
-[ 11%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/inffast.c.o
-[ 11%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jchuff.c.o
-[ 11%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/trees.c.o
-[ 12%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/uncompr.c.o
-[ 12%] Building C object fltk/zlib/CMakeFiles/fltk_z.dir/zutil.c.o
-[ 13%] Linking C static library ../lib/libfltk_z.a
-[ 14%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_window.cpp.o
-[ 14%] Built target fltk_z
-[ 14%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jcdctmgr.c.o
-[ 14%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_button.cpp.o
-[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctfst.c.o
-[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctflt.c.o
-[ 15%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jfdctint.c.o
-[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdapimin.c.o
-[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdapistd.c.o
-[ 16%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdarith.c.o
-[ 16%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_widget.cpp.o
-[ 17%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdtrans.c.o
-Scanning dependencies of target fltk
-[ 18%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_group.cpp.o
-[ 18%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl.cxx.o
-[ 18%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdatasrc.c.o
-[ 18%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmaster.c.o
-[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdinput.c.o
-[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmarker.c.o
-[ 19%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdhuff.c.o
-[ 19%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_text.cpp.o
-[ 20%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Adjuster.cxx.o
-[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmainct.c.o
-[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdcoefct.c.o
-[ 21%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Bitmap.cxx.o
-[ 21%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser.cxx.o
-[ 21%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdpostct.c.o
-[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jddctmgr.c.o
-[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctfst.c.o
-[ 22%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctflt.c.o
-[ 23%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jidctint.c.o
-[ 24%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser_.cxx.o
-[ 24%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_box.cpp.o
-[ 25%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_input.cpp.o
-[ 25%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Browser_load.cxx.o
-[ 25%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Box.cxx.o
-[ 26%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Button.cxx.o
-[ 26%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Chart.cxx.o
-[ 26%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Check_Browser.cxx.o
-[ 26%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdsample.c.o
-[ 27%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Check_Button.cxx.o
-[ 27%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdcolor.c.o
-[ 27%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_output.cpp.o
-[ 27%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Choice.cxx.o
-[ 28%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jquant1.c.o
-[ 28%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Clock.cxx.o
-[ 28%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jquant2.c.o
-[ 29%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Color_Chooser.cxx.o
-[ 29%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_menu.cpp.o
-[ 29%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Copy_Surface.cxx.o
-[ 29%] Building C object fltk/jpeg/CMakeFiles/fltk_jpeg.dir/jdmerge.c.o
-[ 29%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Counter.cxx.o
-[ 30%] Linking C static library ../lib/libfltk_jpeg.a
-[ 30%] Built target fltk_jpeg
-Scanning dependencies of target fltk_png
-[ 30%] Building C object fltk/png/CMakeFiles/fltk_png.dir/png.c.o
-[ 31%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Device.cxx.o
-[ 31%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Dial.cxx.o
-[ 32%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_dialog.cpp.o
-[ 32%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Help_Dialog_Dox.cxx.o
-[ 33%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Double_Window.cxx.o
-[ 33%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_valuator.cpp.o
-[ 33%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngerror.c.o
-[ 34%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngget.c.o
-[ 34%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngmem.c.o
-[ 34%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngpread.c.o
-[ 34%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Browser.cxx.o
-[ 35%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngread.c.o
-[ 35%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Chooser.cxx.o
-[ 36%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Chooser2.cxx.o
-[ 36%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrio.c.o
-[ 36%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrtran.c.o
-[ 36%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_browser.cpp.o
-[ 36%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Icon.cxx.o
-[ 36%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_File_Input.cxx.o
-[ 37%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Graphics_Driver.cxx.o
-[ 37%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Group.cxx.o
-[ 38%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngrutil.c.o
-[ 39%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_misc.cpp.o
-[ 39%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngset.c.o
-[ 39%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_image.cpp.o
-[ 39%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngtrans.c.o
-[ 39%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Help_View.cxx.o
-[ 40%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwio.c.o
-[ 40%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwrite.c.o
-[ 40%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_draw.cpp.o
-[ 41%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Image.cxx.o
-[ 42%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_table.cpp.o
-[ 42%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwtran.c.o
-[ 42%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Image_Surface.cxx.o
-[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/pngwutil.c.o
-[ 43%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input.cxx.o
-[ 43%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_tree.cpp.o
-[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/arm_init.c.o
-[ 43%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/filter_neon_intrinsics.c.o
-[ 44%] Building C object fltk/png/CMakeFiles/fltk_png.dir/arm/palette_neon_intrinsics.c.o
-[ 44%] Linking C static library ../lib/libfltk_png.a
-[ 44%] Built target fltk_png
-[ 45%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input_.cxx.o
-[ 45%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_surface.cpp.o
-[ 46%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_printer.cpp.o
-[ 46%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Input_Choice.cxx.o
-[ 46%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Light_Button.cxx.o
-[ 46%] Linking CXX static library libcfltk.a
-[ 46%] Built target cfltk
-[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu.cxx.o
-[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_.cxx.o
-[ 47%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Bar.cxx.o
-[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Button.cxx.o
-[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_Window.cxx.o
-[ 48%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_add.cxx.o
-[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Menu_global.cxx.o
-[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Multi_Label.cxx.o
-[ 49%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser.cxx.o
-[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Overlay_Window.cxx.o
-[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Pack.cxx.o
-[ 50%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Paged_Device.cxx.o
-[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Pixmap.cxx.o
-[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Positioner.cxx.o
-[ 51%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Preferences.cxx.o
-[ 52%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Printer.cxx.o
-[ 52%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Progress.cxx.o
-[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Repeat_Button.cxx.o
-[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Return_Button.cxx.o
-[ 53%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Roller.cxx.o
-[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Round_Button.cxx.o
-[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Screen_Driver.cxx.o
-[ 54%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scroll.cxx.o
-[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Scrollbar.cxx.o
-[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Shared_Image.cxx.o
-[ 55%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Simple_Terminal.cxx.o
-[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Single_Window.cxx.o
-[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Slider.cxx.o
-[ 56%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Spinner.cxx.o
-[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Sys_Menu_Bar.cxx.o
-[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_System_Driver.cxx.o
-[ 57%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Table.cxx.o
-[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Table_Row.cxx.o
-[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tabs.cxx.o
-[ 58%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Buffer.cxx.o
-[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Display.cxx.o
-[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Text_Editor.cxx.o
-[ 59%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tile.cxx.o
-[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tiled_Image.cxx.o
-[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tooltip.cxx.o
-[ 60%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree.cxx.o
-[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Item_Array.cxx.o
-[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Item.cxx.o
-[ 61%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Tree_Prefs.cxx.o
-[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Valuator.cxx.o
-[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Input.cxx.o
-[ 62%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Output.cxx.o
-[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Value_Slider.cxx.o
-[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Widget.cxx.o
-[ 63%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Widget_Surface.cxx.o
-[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window.cxx.o
-[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_Driver.cxx.o
-[ 64%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_fullscreen.cxx.o
-[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_hotspot.cxx.o
-[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Window_iconize.cxx.o
-[ 65%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Wizard.cxx.o
-[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_XBM_Image.cxx.o
-[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_XPM_Image.cxx.o
-[ 66%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_abort.cxx.o
-[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_add_idle.cxx.o
-[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_arg.cxx.o
-[ 67%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_compose.cxx.o
-[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_display.cxx.o
-[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_get_system_colors.cxx.o
-[ 68%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_grab.cxx.o
-[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_lock.cxx.o
-[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_own_colormap.cxx.o
-[ 69%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_visual.cxx.o
-[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_absolute.cxx.o
-[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_expand.cxx.o
-[ 70%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_ext.cxx.o
-[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_isdir.cxx.o
-[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_list.cxx.o
-[ 71%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_match.cxx.o
-[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/filename_setext.cxx.o
-[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_arc.cxx.o
-[ 72%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_ask.cxx.o
-[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_boxtype.cxx.o
-[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_color.cxx.o
-[ 73%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_cursor.cxx.o
-[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_curve.cxx.o
-[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_diamond_box.cxx.o
-[ 74%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_draw.cxx.o
-[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_draw_pixmap.cxx.o
-[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_engraved_label.cxx.o
-[ 75%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_file_dir.cxx.o
-[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_font.cxx.o
-[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_gleam.cxx.o
-[ 76%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_gtk.cxx.o
-[ 77%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_labeltype.cxx.o
-[ 77%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_open_uri.cxx.o
-[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_oval_box.cxx.o
-[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_overlay.cxx.o
-[ 78%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_overlay_visual.cxx.o
-[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_plastic.cxx.o
-[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_read_image.cxx.o
-[ 79%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_rect.cxx.o
-[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_round_box.cxx.o
-[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_rounded_box.cxx.o
-[ 80%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_set_font.cxx.o
-[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_scroll_area.cxx.o
-[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_shadow_box.cxx.o
-[ 81%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_shortcut.cxx.o
-[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_show_colormap.cxx.o
-[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_symbols.cxx.o
-[ 82%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_vertex.cxx.o
-[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/screen_xywh.cxx.o
-[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_utf8.cxx.o
-[ 83%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_string.cxx.o
-[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_encoding_latin1.cxx.o
-[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/fl_encoding_mac_roman.cxx.o
-[ 84%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver.cxx.o
-[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_color.cxx.o
-[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_rect.cxx.o
-[ 85%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_font.cxx.o
-[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_vertex.cxx.o
-[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_image.cxx.o
-[ 86%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_arci.cxx.o
-[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Graphics_Driver_line_style.cxx.o
-[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Copy_Surface_Driver.cxx.o
-[ 87%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Quartz/Fl_Quartz_Image_Surface_Driver.cxx.o
-[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Cocoa/Fl_Cocoa_Window_Driver.cxx.o
-[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Cocoa/Fl_Cocoa_Screen_Driver.cxx.o
-[ 88%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Posix/Fl_Posix_System_Driver.cxx.o
-[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Darwin/Fl_Darwin_System_Driver.cxx.o
-[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_get_key_mac.cxx.o
-[ 89%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_cocoa.mm.o
-[ 90%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/Cocoa/Fl_Cocoa_Printer_Driver.mm.o
-[ 90%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_Native_File_Chooser_MAC.mm.o
-[ 90%] Building CXX object fltk/src/CMakeFiles/fltk.dir/Fl_MacOS_Sys_Menu_Bar.mm.o
-[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/flstring.c.o
-[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/numericsort.c.o
-[ 91%] Building C object fltk/src/CMakeFiles/fltk.dir/vsnprintf.c.o
-[ 92%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/is_right2left.c.o
-[ 92%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/is_spacing.c.o
-[ 92%] Building C object fltk/src/CMakeFiles/fltk.dir/xutf8/case.c.o
-[ 93%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/PostScript/Fl_PostScript.cxx.o
-[ 93%] Building CXX object fltk/src/CMakeFiles/fltk.dir/drivers/PostScript/Fl_PostScript_image.cxx.o
-[ 93%] Linking CXX static library ../lib/libfltk.a
-[ 93%] Built target fltk
-Scanning dependencies of target fltk_forms
-[ 93%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_free.cxx.o
-[ 93%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_bitmap.cxx.o
-[ 94%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_compatibility.cxx.o
-Scanning dependencies of target fltk_images
-[ 94%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/fl_images_core.cxx.o
-[ 94%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_BMP_Image.cxx.o
-[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_File_Icon2.cxx.o
-[ 95%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_GIF_Image.cxx.o
-[ 96%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_fselect.cxx.o
-[ 96%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_Help_Dialog.cxx.o
-[ 96%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_pixmap.cxx.o
-[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_JPEG_Image.cxx.o
-[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_forms.dir/forms_timer.cxx.o
-[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_PNG_Image.cxx.o
-[ 97%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_PNM_Image.cxx.o
-[ 98%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_Image_Reader.cxx.o
-[ 99%] Linking CXX static library ../lib/libfltk_forms.a
-[ 99%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/Fl_SVG_Image.cxx.o
-[ 99%] Building CXX object fltk/src/CMakeFiles/fltk_images.dir/drivers/SVG/Fl_SVG_File_Surface.cxx.o
-[ 99%] Built target fltk_forms
-[100%] Linking CXX static library ../lib/libfltk_images.a
-[100%] Built target fltk_images
+[  6%] Built target fltk_z
+[  7%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_window.cpp.o
+[  7%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_button.cpp.o
+[ 23%] Built target fltk_jpeg
+[ 23%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_widget.cpp.o
+[ 29%] Built target fltk_png
+[ 30%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_group.cpp.o
+[ 88%] Built target fltk
+[ 88%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_text.cpp.o
+[ 92%] Built target fltk_images
+[ 95%] Built target fltk_forms
+[ 95%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_box.cpp.o
+[ 96%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_input.cpp.o
+[ 96%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_output.cpp.o
+[ 96%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_menu.cpp.o
+[ 97%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_dialog.cpp.o
+[ 97%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_valuator.cpp.o
+[ 97%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_browser.cpp.o
+[ 98%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_misc.cpp.o
+[ 98%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_image.cpp.o
+[ 98%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_draw.cpp.o
+[ 99%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_table.cpp.o
+[ 99%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_tree.cpp.o
+[ 99%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_surface.cpp.o
+[100%] Building CXX object CMakeFiles/cfltk.dir/src/cfl_printer.cpp.o
+[100%] Linking CXX static library libcfltk.a
+[100%] Built target cfltk
 Install the project...
 -- Install configuration: "Release"
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libcfltk.a
@@ -394,10 +113,10 @@ Install the project...
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/cfltk/cfl_valuator.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/cfltk/cfl_widget.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/cfltk/cfl_window.h
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/cmake/cfltk/cfltkConfig.cmake
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/cmake/cfltk/cfltkConfig.cmake
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/cmake/cfltk/cfltkConfig-release.cmake
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/cmake/cfltk/cfltkConfigVersion.cmake
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/cmake/cfltk/cfltkConfigVersion.cmake
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/glut.H
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/Fl_PNM_Image.H
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/Fl_Radio_Button.H
@@ -553,35 +272,35 @@ Install the project...
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/Fl_Radio_Light_Button.H
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/fl_string.h
 -- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/abi-version.h
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTK-Targets.cmake
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/abi-version.h
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTK-Targets.cmake
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTK-Targets-release.cmake
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTKConfig.cmake
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTKConfig.cmake
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/FLTK-Functions.cmake
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/UseFLTK.cmake
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/bin/fltk-config
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/FLTK.framework/Resources/CMake/UseFLTK.cmake
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/bin/fltk-config
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man1/fluid.1
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man1/fltk-config.1
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man3/fltk.3
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man6/blocks.6
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man6/checkers.6
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/share/man/man6/sudoku.6
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_z.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_z.a
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/zconf.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/zlib.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/zutil.h
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_jpeg.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_jpeg.a
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/jconfig.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/jerror.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/jmorecfg.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/jpeglib.h
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/png.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/pngconf.h
 -- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/include/FL/images/pnglibconf.h
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk.a
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_forms.a
--- Installing: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_images.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_forms.a
+-- Up-to-date: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_images.a
 cargo:root=/Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out
 cargo:rustc-link-search=native=/Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build
 cargo:rustc-link-search=native=/Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/build/Release

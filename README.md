@@ -1,4 +1,4 @@
-# FLTK-RS Examples
+# ⚙ FLTK-RS Examples 
 NOT READY FOR USE YET
 A small collection of modular UI features I'm creating while I'm developing MuTex, written with the [fltk-rs](https://github.com/MoAlyousef/fltk-rs) library.
 

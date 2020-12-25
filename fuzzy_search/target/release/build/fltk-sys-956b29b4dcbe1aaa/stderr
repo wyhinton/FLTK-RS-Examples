@@ -28,16 +28,6 @@ CMake Deprecation Warning at fltk/CMakeLists.txt:37 (cmake_policy):
 
 
 
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(arm_init.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(arm_init.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(Fl_Help_Dialog_Dox.cxx.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(fl_overlay_visual.cxx.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(Fl_Help_Dialog_Dox.cxx.o) has no symbols
-/Library/Developer/CommandLineTools/usr/bin/ranlib: file: ../lib/libfltk.a(fl_overlay_visual.cxx.o) has no symbols
 /Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(arm_init.c.o) has no symbols
 /Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(filter_neon_intrinsics.c.o) has no symbols
 /Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/webbhinton/my-fltk-examples/fuzzy_search/target/release/build/fltk-sys-956b29b4dcbe1aaa/out/lib/libfltk_png.a(palette_neon_intrinsics.c.o) has no symbols
