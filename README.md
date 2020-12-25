@@ -8,5 +8,16 @@ Included Examples:
 - Noise Generator (coming soon...)
 - Image Zoom
 
-## 🔍 Fuzzy Search Table
+## How to Use
+- Install CMake, XCode/Windows Developer Tookit  
+- cd to the example you would like 
+- cargo run --releasae
 
+## 🧺 Application Bundling
+Build to a .app or .msi with [cargo-bundler](https://github.com/burtonageo/cargo-bundle)
+
+---
+
+## 🔍 Fuzzy Search Table
+Fuzzy search a table of random strings, powered by [Sublime Fuzzy](https://crates.io/crates/sublime_fuzzy)
+![Fuzzy Search](./images/fuzzy_search.png)
