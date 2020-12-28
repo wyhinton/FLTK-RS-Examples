@@ -19,5 +19,10 @@ Build to a .app or .msi with [cargo-bundler](https://github.com/burtonageo/cargo
 ---
 
 ## 🔍 Fuzzy Search Table
-Fuzzy search a table of random strings, powered by [Sublime Fuzzy](https://crates.io/crates/sublime_fuzzy)
+Fuzzy search a table of random strings, powered by [Sublime Fuzzy](https://crates.io/crates/sublime_fuzzy).
 ![Fuzzy Search](./images/fuzzy_search.png)
+
+---
+## ✂️ Image Clipping
+Use the Image Crate to do crop and greyscale a selected portion of an image, then set it to a new frame. 
+![Fuzzy Search](./images/image_select.png)
