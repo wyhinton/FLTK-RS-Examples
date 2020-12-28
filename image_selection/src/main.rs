@@ -27,7 +27,8 @@ fn main() {
     let my_img = MaskableImage::new(mix,miy,300,300, "imgs/tree_cop.png", s.clone());
     let mut prev = Frame::default().with_pos(mix+400, miy).with_size(300,300);
 
-    prev.set_frame(FrameType::FlatBox);
+    // prev.set_frame(FrameType::FlatBox);
+    prev.set_frame(FrameType::BorderFrame);
     prev.set_color(Color::Red);
 
     win.end();
@@ -46,7 +47,8 @@ fn main() {
                         println!("x {}, y{}, w {}, h{}", prev_img.x, prev_img.y, prev_img.width, prev_img.height);
                     });
                     println!("{}", "shoudl update preview segment");
-                    prev.redraw();
+                    // prev.redraw();
+                    app::redraw();
                 }
             }
         }
