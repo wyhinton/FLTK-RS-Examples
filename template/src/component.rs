@@ -26,11 +26,11 @@ impl Component {
         sb.pack.end();
         sb.frame.draw2(move |b|{
             set_draw_color(Color::Black);
-            draw_text2("Search...", b.x() + 10 , b.y(), b.width(), b.height(), Align::Inside | Align::Left );
+            //draw something
         });
 
         sb.frame.set_callback2(move |b| {
-            fuzzy_search(b, sc.clone(), sx.clone())
+            //do a callback
         });
 
         sb.frame.handle2(move |t, ev| {
