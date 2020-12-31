@@ -37,12 +37,13 @@ pub struct DragItem {
     pub hidden: bool,
     pub active: bool, 
     pub hide_button: IconToggleButton,
+    pub input_configs: Vec<ConfigVal>,
     // pub 
 }
 
 impl fmt::Debug for DragItem{
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "Hi: {}, active: {}, hidden: {} ", self.id, self.active, self.hidden)
+        write!(f, "Hi: {}, active: {}, hidden: {}, configs: {:?} ", self.id, self.active, self.hidden, self.input_configs)
     }
 }
 
@@ -94,6 +95,7 @@ impl DragItem{
             hidden: false,
             active: true, 
             hide_button: hide_button, 
+            input_configs: vec![], 
         };
 
         // let mut def = op
@@ -106,17 +108,16 @@ impl DragItem{
         match op {
             Operation::TestOperation{..}=>{
                 let test_def = TestConfig::default();
-                // let mystuff = test_def.as_array();
-                // test_def.test_trait_fn();
-                println!("{}", "got test op at drag_item");
-                let op_configs = test_def.as_array();
-                inputs_from_config(op_configs, input_clone);
-
+                let op_configs = test_def.inputs;
+                di.input_configs = op_configs.clone(); 
+                inputs_from_config(op_configs, input_clone, si_clone, si_idc);
             }
+
             Operation::Add{..}=>{
                 let def_add_opp = AddConfig::default();
-                let op_configs = def_add_opp.as_array();
-                inputs_from_config(op_configs, input_clone);
+                let op_configs = def_add_opp.inputs;
+                di.input_configs = op_configs.clone(); 
+                inputs_from_config(op_configs, input_clone, si_clone, si_idc);
             }
             _=>println!("{}", "not test config")
         }
@@ -211,6 +212,7 @@ impl DragItem{
         // self.drag_content.frame.redraw();
     }
 
+    // pub fn update
 }
 
 impl Deref for DragItem {
@@ -238,13 +240,20 @@ fn make_input(cf: ConfigVal)-> Slider{
 }
 
 //iterate through the inputs in a config generating input widgets and add them to a group
-fn inputs_from_config(cf: Vec<ConfigVal>, parent: Pack){
+fn inputs_from_config(cf: Vec<ConfigVal>, parent: Pack, s: fltk::app::Sender<Message>, drag_item_id: Uuid){
     // let t_tuple = (0,1,2,3,4,5); 
     let mut x = 0; 
+    // let sc = s.clone(); 
     for xyz in cf.clone(){
         // println!("{}", t_tuple.x); 
-        println!("name of value is {}", xyz.val_name); 
-        let new_input = make_input(xyz);
+        let sc = s.clone(); 
+        println!("name of value is {}, id is: {}", xyz.val_name, xyz.id); 
+        let mut new_input = make_input(xyz.clone());
+        new_input.set_callback2(move|widg|{
+            // s.clone().send(Message::UpdateInputValue(xyz.clone().id))
+            sc.clone().send(Message::UpdateInputValue(drag_item_id.clone(), xyz.clone().id, widg.value()))
+            
+        });
         parent.clone().add(&new_input);
         x = x + 1; 
     }

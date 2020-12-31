@@ -1,11 +1,11 @@
-use fltk::{app, app::*, image::*, frame::*, group::*, input::*, draw::*, menu::*};
-use std::{fs::OpenOptions, ops::{Deref, DerefMut}, println};
+use fltk::{app, image::*, group::*, menu::*, valuator::*, widget::*};
+use std::{ops::{Deref, DerefMut}, println};
 // use strum::IntoEnumIterator;
 // use strum::EnumMessage; 
 // use strum_macros::EnumIter;
 // use strum::{IntoEnumIterator, EnumMessage};
 use strum::IntoEnumIterator; 
-use strum::*; 
+// use strum::*; 
 use strum::EnumMessage;
 // use strum::IntoEnumIterator; 
 use super::Message;
@@ -14,6 +14,7 @@ use super::AddConfig;
 use super::SubtractConfig;
 use super::TestConfig;
 use super::ConfigVal; 
+use super::OpLayer;
 // use crate::effect_configurations::*; 
 
 use uuid::Uuid; 
@@ -21,7 +22,7 @@ use uuid::Uuid;
 pub mod drag_item;
 use drag_item::DragItem;
 
-
+// pub struct OpsAnd
 #[derive(Clone)]
 pub struct DragInfo{
     drag_hover: Option<DragItem>,
@@ -92,7 +93,6 @@ impl DragableContainer {
         let mut testitems = vec![
             DragItem::new("0", Operation::Add{config: AddConfig::default()}, s.clone()),
             DragItem::new("1", Operation::Add{config: AddConfig::default()}, s.clone()),
-            // DragItem::new("2", Operation::Subtract{config: SubtractConfig{a: 1, b: 1}}, s.clone()),
             DragItem::new("3", Operation::Add{config: AddConfig::default()}, s.clone()),
             DragItem::new("3", Operation::Add{config: AddConfig::default()}, s.clone()),
             DragItem::new("4", Operation::TestOperation{config: TestConfig::default()}, s.clone())
@@ -124,12 +124,28 @@ impl DragableContainer {
         dc
     }
     
-    pub fn get_ops(&mut self)->Vec<Operation>{
-        let mut ops = vec![];
+    //bind our layer operations and layer input values into a structure
+    pub fn get_ops(&mut self)-> Vec<OpLayer>{
+        // let mut ops = vec![];
+        let mut op_layers_to_evaluate = vec![];
+        // println!("ITEMS AT GET ITEMS: {:?}", self.items);
         for y in &self.items{
-            ops.push(y.operation.clone());
+            // println!("over here we got: {:?}", y.input_configs);
+            // y.input_configs.clone(); 
+            // ops.push(y.operation.clone());
+            let op_layer = OpLayer{
+                op: y.operation.clone(),
+                configs: y.input_configs.clone(),
+            };
+            op_layers_to_evaluate.push(op_layer);
+            
+            // ops.push( y.input_configs.clone());
+            // ops.push( y.input_configs.clone());
+            
         }
-        ops
+        // println!("ITEMS AT OPS: {:?}", ops);
+        // ops
+        return op_layers_to_evaluate; 
     }
     //add an operation layer
     pub fn add_op(&mut self, new_op: Operation, s: fltk::app::Sender<Message>){
@@ -149,6 +165,7 @@ impl DragableContainer {
     //delete an operation layer
     pub fn delete_op(&mut self, to_delete_id: Uuid, s: fltk::app::Sender<Message>){
         for item in &self.items{
+            println!("{:?}", item); 
             if item.id == to_delete_id{
                 println!("found one to delete {:?}", item);
                 self.pack.remove(&item.pack);
@@ -190,6 +207,36 @@ impl DragableContainer {
         }
         app::redraw();
     }
+
+    pub fn update_item_input(&mut self, item_to_update: Uuid, field_to_update: Uuid, val: f64){
+        let mut item_index = 0; 
+        for mut item in self.items.clone(){
+        // for mut item in self.items.clone(){
+     
+            if item.id == item_to_update{
+                let mut j = 0; 
+                for mut ic in item.input_configs.clone(){
+                // for mut ic in item.input_configs.clone(){
+                    if ic.id == field_to_update{
+                        item.input_configs[j].set_value(val);
+                        self.items[item_index] = item.clone(); 
+                    }
+                    j = j +1; 
+                    // println!("{:?}", ic);
+                }
+            }
+            item_index = item_index + 1;
+            
+            // println!("{:?}", item); 
+        }
+        
+        // println!("{}", )
+        app::redraw();
+    }
+
+
+
+    
     
     pub fn set_ops(&mut self, updated_items: Vec<DragItem>){
         self.items = updated_items.clone();
@@ -256,7 +303,7 @@ fn dnd_handle(item_container: &mut Pack, ev: Event, items: Vec<DragItem>, s: flt
 
 // fn drag_info(t: Scroll, ev: Event, s: fltk::app::Sender<Message>, mut drg: DragInfo, mut l_items: Vec<DragItem>,) -> DragInfo{
 fn drag_info(t: Pack, ev: Event, s: fltk::app::Sender<Message>, mut drg: DragInfo, mut l_items: Vec<DragItem>,) -> DragInfo{
-    let (x, y) = app::event_coords(); 
+    // let (x, y) = app::event_coords(); 
     match ev {
         Event::Push => {       
             // println!("num items {}", l_items.len());
