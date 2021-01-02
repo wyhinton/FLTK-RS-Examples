@@ -23,3 +23,4 @@ Fuzzy search a table of random strings, powered by [Sublime Fuzzy](https://crate
 ## ✂️ Image Clipping
 Use the Image Crate to do crop and greyscale a selected portion of an image, then set it to a new frame. 
 ![Fuzzy Search](./images/image_select.png)
+

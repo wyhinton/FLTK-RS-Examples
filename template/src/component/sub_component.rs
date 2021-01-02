@@ -5,7 +5,7 @@ use std::ops::{Deref, DerefMut};
 // use syn::*;
 use super::Message;
 
-
+#[derive(Clone)]
 pub struct SubComponent {
     pub pack: Pack, 
     pub frame: Frame,

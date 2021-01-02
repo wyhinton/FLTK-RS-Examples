@@ -242,6 +242,7 @@ fn main() {
     let mut test_img_frame = Frame::new(20, 20, 300, 300, "");
     let img = image::open("imgs/clouds.jpeg").unwrap();
     let contrasted = image::imageops::colorops::contrast(&img, 100.0).into_raw(); 
+    // let contrasted2  = image::imageops::colorops::contrast(&contrasted, 100.0).into_raw();
     // let contrasted = image::imageops::colorops::contrast(&img, 100.0).to_image(); 
     // let contrasted = image::imageops::colorops::contrast(&img, 100.0).to_image().to_vec(); 
     let (x, y) = img.dimensions();

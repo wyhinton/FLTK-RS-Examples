@@ -6,7 +6,7 @@ use std::ops::{Deref, DerefMut};
 use super::Message;
 mod sub_component;
 use sub_component::SubComponent; 
-
+#[derive(Clone)]
 pub struct Component {
     pub pack: Pack, 
     pub frame: Frame,

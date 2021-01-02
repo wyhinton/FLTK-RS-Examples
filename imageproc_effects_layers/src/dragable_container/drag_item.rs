@@ -176,7 +176,7 @@ impl DragItem{
     pub fn reset_style(&mut self){
         self.drag_content.frame.draw2(move |b|{
             // draw_rect_fill(b.x(), b.y(), b.width(), 2, Color::Red);
-            set_draw_color(Color::Red);
+            // set_draw_color(Color::Red);
             draw_rect(b.x(), b.y(), b.width(), b.height());
         });
         self.drag_content.frame.set_color(Color::Red);
