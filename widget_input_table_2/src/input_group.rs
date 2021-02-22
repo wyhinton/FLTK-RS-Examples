@@ -57,6 +57,7 @@ impl InputGroup {
         //         MutexValuator::DialInput => {BaseMutexValuator::new(0,0,0,0, config.inp_type.clone(), MutDial{widg: Dial::new(0,0,100,100,"")})},
         //     };
             let mut my_new = get_something(config.inp_type.clone());
+            println!("{}", my_new.unwrap().);
             // let my_test = BaseMutexValuator::new(0,0,0,0, config.inp_type.clone(), MutIntSlider{widg: HorSlider::new(0,0,100,100,"")});
             // let my_test: <MutIntSlider> = BaseMutexValuator::new(0,0,0,0, config.inp_type, MutIntSlider{widg: HorSlider::new(0,0,100,100,"")});
             // BaseMutexValuator::new(x,y,w,h, config.inp_type);

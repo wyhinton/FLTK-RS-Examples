@@ -35,6 +35,7 @@ pub struct InputConfig<T = f64>{
     pub step: T,
 }
 
+
 //default input config is a float slider
 impl Default for InputConfig{
     fn default() -> InputConfig {
@@ -64,10 +65,8 @@ fn main() {
     
     let t_width = 200;
     
-    let test_group = vec![InputConfig::default(), InputConfig::default(), InputConfig::default(), InputConfig::default()];
-
-    let input_table = InputGroup::new(win.width()/2 - t_width/2, 200, t_width, 400, test_group, s.clone());
-    // let input_table = InputGroup::new(win.width()/2 - t_width/2, 200, t_width, 400, test_group, s.clone());
+    let input_panel = InputPanel::new(200,100,500,500);
+    
     win.end();
     win.show();
 
