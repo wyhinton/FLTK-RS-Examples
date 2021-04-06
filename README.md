@@ -24,5 +24,5 @@ Use the Image Crate to do crop and greyscale a selected portion of an image, the
 ---
 ## ✂️ Speedy2d Pan/Zoom Canvas
 A hardware accelerated pan/zoom canvas using [Speedy2d](https://github.com/QuantumBadger/Speedy2D) as the render engine. 
-![Fuzzy Search](./images/image_select.png)
+![Fuzzy Search](./images/Speedy_2d_Pan_Zoom_Canvas.png)
 
