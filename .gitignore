@@ -6,3 +6,6 @@ github_questions/
 /noise_generator
 /build_to_app_bundle
 /pack_lag
+/draw_matrixes
+/global_menu_bar
+/render_progress

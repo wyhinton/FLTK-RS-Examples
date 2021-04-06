@@ -26,10 +26,6 @@ impl CustomInputExt for CBoolInput{
     fn hide(&mut self){
         self.pack.hide();
     }
-    // fn set_text_color(&mut self, text_color: fltk::enums::Color){
-    //     //Do Nothing
-    //     // self.input.set_text_color(fltk::enums::Color::Red);
-    // }
     fn set_color(&mut self, color: fltk::enums::Color){
         self.input.set_color(color);
     }
@@ -38,7 +34,6 @@ impl CustomInputExt for CBoolInput{
         match val {
             CustomInputValue::CiFloat(inp) => inp,
             _ => IncorrectInputType { kind: val }.fail()?
-              // ^^^^^^^^^^^^^^^^^^ no Error::
        };
         Ok(())
     }
