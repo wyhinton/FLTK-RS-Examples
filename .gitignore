@@ -4,6 +4,5 @@ github_questions/
 /imageproc
 /imageproc_effects_layers
 /noise_generator
-/images
 /build_to_app_bundle
 /pack_lag
