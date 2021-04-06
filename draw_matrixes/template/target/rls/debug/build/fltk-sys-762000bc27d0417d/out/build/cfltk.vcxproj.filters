@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_new.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_valuator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_browser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\src\cfl_printer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8631F818-DC97-3F9D-AB50-952C64B870C6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

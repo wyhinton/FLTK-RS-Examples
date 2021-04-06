@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7AF5723-5BF3-3D99-9D15-1E6368E08606}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>fltk_jpeg</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fltk_jpeg.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fltk_jpegd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fltk_jpeg.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fltk_jpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fltk_jpeg.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fltk_jpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fltk_jpeg.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fltk_jpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk;C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk/fltk/jpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk" "-BC:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build" --check-stamp-file "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/fltk/jpeg/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\jpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk/fltk/jpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk" "-BC:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build" --check-stamp-file "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/fltk/jpeg/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\jpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk/fltk/jpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk" "-BC:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build" --check-stamp-file "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/fltk/jpeg/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\jpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk/fltk/jpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk" "-BC:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build" --check-stamp-file "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/fltk/jpeg/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\jpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jmemnobs.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jaricom.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcomapi.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jutils.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jerror.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jmemmgr.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcapimin.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcapistd.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcarith.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jctrans.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcparam.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdatadst.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcinit.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcmaster.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcmarker.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcmainct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcprepct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jccoefct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jccolor.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcsample.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jchuff.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jcdctmgr.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jfdctfst.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jfdctflt.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jfdctint.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdapimin.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdapistd.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdarith.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdtrans.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdatasrc.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdmaster.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdinput.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdmarker.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdhuff.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdmainct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdcoefct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdpostct.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jddctmgr.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jidctfst.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jidctflt.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jidctint.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdsample.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdcolor.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jquant1.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jquant2.c" />
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\jpeg\jdmerge.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\ZERO_CHECK.vcxproj">
+      <Project>{FD2CF223-E17A-3829-9E4F-AB296F780929}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

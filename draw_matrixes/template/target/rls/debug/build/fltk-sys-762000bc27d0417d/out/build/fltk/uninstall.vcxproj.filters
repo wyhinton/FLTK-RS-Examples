@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\7e12ec743c7dcec0b6e612a02535e9ed\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{47C34595-EBE0-3F29-8FA0-712D6CB32171}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

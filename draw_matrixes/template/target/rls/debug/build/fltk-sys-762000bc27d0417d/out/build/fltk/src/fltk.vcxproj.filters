@@ -1,0 +1,1022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Adjuster.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Bitmap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Browser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Browser_.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Browser_load.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Chart.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Check_Browser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Check_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Choice.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Clock.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Color_Chooser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Copy_Surface.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Counter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Device.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Dial.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Help_Dialog_Dox.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Double_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_File_Browser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_File_Chooser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_File_Chooser2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_File_Icon.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_File_Input.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Graphics_Driver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Group.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Help_View.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Image_Surface.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Input.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Input_.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Input_Choice.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Light_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_Bar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_add.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Menu_global.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Multi_Label.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Native_File_Chooser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Overlay_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Pack.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Paged_Device.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Pixmap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Positioner.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Preferences.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Printer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Progress.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Repeat_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Return_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Roller.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Round_Button.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Screen_Driver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Scroll.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Scrollbar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Shared_Image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Simple_Terminal.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Single_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Slider.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Spinner.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Sys_Menu_Bar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_System_Driver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Table.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Table_Row.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tabs.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Text_Buffer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Text_Display.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Text_Editor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tile.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tiled_Image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tooltip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tree.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tree_Item_Array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tree_Item.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Tree_Prefs.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Valuator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Value_Input.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Value_Output.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Value_Slider.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Widget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Widget_Surface.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Window_Driver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Window_fullscreen.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Window_hotspot.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Window_iconize.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Wizard.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_XBM_Image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_XPM_Image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_abort.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_add_idle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_arg.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_compose.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_display.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_get_system_colors.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_grab.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_lock.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_own_colormap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_visual.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_absolute.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_expand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_ext.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_isdir.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_list.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_match.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\filename_setext.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_arc.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_ask.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_boxtype.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_color.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_cursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_curve.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_diamond_box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_draw.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_draw_pixmap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_engraved_label.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_file_dir.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_font.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_gleam.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_gtk.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_labeltype.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_open_uri.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_oval_box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_overlay.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_overlay_visual.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_plastic.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_read_image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_rect.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_round_box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_rounded_box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_set_font.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_scroll_area.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_shadow_box.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_shortcut.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_show_colormap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_symbols.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_vertex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\screen_xywh.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_utf8.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_string.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_encoding_latin1.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_encoding_mac_roman.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_System_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_Screen_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_Window_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_Printer_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_arci.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_color.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_font.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_image.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_line_style.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_rect.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver_vertex.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Copy_Surface_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Image_Surface_Driver.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_win32.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_dnd_win32.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_Native_File_Chooser_WIN32.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\Fl_get_key_win32.cxx">
+      <Filter>Driver Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\flstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\numericsort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\vsnprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\xutf8\is_right2left.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\xutf8\is_spacing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\xutf8\case.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\scandir_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\PostScript\Fl_PostScript.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\PostScript\Fl_PostScript_image.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\fl_call_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_utf8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\gl2opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\glu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\platform_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\FL\abi-version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\fltk\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Enumerations.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Adjuster.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_BMP_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Bitmap.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Box.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Browser_.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Cairo.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Cairo_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Chart.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Check_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Check_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Choice.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Clock.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Color_Chooser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Copy_Surface.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Counter.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Device.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Dial.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Double_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Export.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_File_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_File_Chooser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_File_Icon.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_File_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Fill_Dial.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Fill_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Float_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_FormsBitmap.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_FormsPixmap.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Free.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_GIF_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Gl_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Graphics_Driver.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Group.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Help_Dialog.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Help_View.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Hold_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Hor_Fill_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Hor_Nice_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Hor_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Hor_Value_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Image_Surface.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Input_.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Input_Choice.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Int_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_JPEG_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Light_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Line_Dial.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu_.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu_Bar.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu_Item.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Menu_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Multi_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Multi_Label.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Multiline_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Multiline_Output.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Native_File_Chooser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Nice_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Object.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Output.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Overlay_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_PNG_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_PNM_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Pack.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Paged_Device.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Pixmap.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Plugin.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Positioner.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_PostScript.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Preferences.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Printer.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Progress.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_RGB_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Radio_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Radio_Light_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Radio_Round_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Rect.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Repeat_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Return_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Roller.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Round_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Round_Clock.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_SVG_File_Surface.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_SVG_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Scroll.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Scrollbar.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Secret_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Select_Browser.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Shared_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Simple_Counter.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Simple_Terminal.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Single_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Spinner.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Sys_Menu_Bar.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Table.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Table_Row.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tabs.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Text_Buffer.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Text_Display.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Text_Editor.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tile.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tiled_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Timer.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Toggle_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Toggle_Light_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Toggle_Round_Button.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tooltip.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tree.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tree_Item.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tree_Item_Array.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Tree_Prefs.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Valuator.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Value_Input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Value_Output.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Value_Slider.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Widget.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Widget_Surface.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Window.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_Wizard.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_XBM_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\Fl_XPM_Image.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\android.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\filename.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_ask.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_draw.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_message.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_show_colormap.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\fl_show_input.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\forms.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\gl_draw.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\glut.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\mac.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\platform.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\win32.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\FL\x.H">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_System_Driver.H">
+      <Filter>Driver Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_Screen_Driver.H">
+      <Filter>Driver Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\WinAPI\Fl_WinAPI_Window_Driver.H">
+      <Filter>Driver Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_GDI_Graphics_Driver.H">
+      <Filter>Driver Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Primary User\.cargo\registry\src\github.com-1ecc6299db9ec823\fltk-sys-0.12.0\cfltk\fltk\src\drivers\GDI\Fl_Font.H">
+      <Filter>Driver Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Driver Header Files">
+      <UniqueIdentifier>{1F2526B5-543A-3EA4-B36B-FEC5AF0BB503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver Source Files">
+      <UniqueIdentifier>{894F996E-574E-3788-8795-23494ECA9BF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1B2E560C-9E26-38E9-A5E3-67AAD83CAF4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8631F818-DC97-3F9D-AB50-952C64B870C6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

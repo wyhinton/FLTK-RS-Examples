@@ -1,0 +1,10 @@
+^C:\USERS\PRIMARY USER\DESKTOP\TEXTURE SYNTHESIS APP\MY_EXAMPLES\FLTK-RS-EXAMPLES\TEMPLATE\TARGET\RLS\DEBUG\BUILD\FLTK-SYS-762000BC27D0417D\OUT\BUILD\CMAKEFILES\C2D99DEE1CD0829F8C996FABE3941A97\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Primary User/.cargo/registry/src/github.com-1ecc6299db9ec823/fltk-sys-0.12.0/cfltk" "-BC:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/cfltk.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,40 @@
+fatal: not a git repository (or any of the parent directories): .git
+error: patch failed: CMake/export.cmake:33
+error: CMake/export.cmake: patch does not apply
+error: patch failed: CMake/options.cmake:115
+error: CMake/options.cmake: patch does not apply
+error: VERSION: No such file or directory
+error: patch failed: src/CMakeLists.txt:300
+error: src/CMakeLists.txt: patch does not apply
+error: patch failed: src/Fl_lock.cxx:418
+error: src/Fl_lock.cxx: patch does not apply
+error: patch failed: src/Fl_win32.cxx:586
+error: src/Fl_win32.cxx: patch does not apply
+error: patch failed: src/config_lib.h:78
+error: src/config_lib.h: patch does not apply
+error: patch failed: src/drivers/Android/Fl_Android_System_Driver.H:25
+error: src/drivers/Android/Fl_Android_System_Driver.H: patch does not apply
+error: patch failed: src/drivers/Android/Fl_Android_System_Driver.cxx:24
+error: src/drivers/Android/Fl_Android_System_Driver.cxx: patch does not apply
+CMake Deprecation Warning at fltk/CMakeLists.txt:37 (cmake_policy):
+  The OLD behavior for policy CMP0072 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_FLAGS
+    CMAKE_ASM_FLAGS_RELEASE
+    CMAKE_EXPORT_COMPILE_COMMANDS
+    OpenGL_GL_PREFERENCE
+
+
+fatal: not a git repository (or any of the parent directories): .git

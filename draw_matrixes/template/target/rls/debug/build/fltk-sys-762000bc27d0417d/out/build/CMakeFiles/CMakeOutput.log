@@ -1,0 +1,270 @@
+The system is: Windows - 10.0.19041 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: ;-nologo;-MD;-Brepro
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/3/2021 11:35:22 AM.
+Project "C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.90
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/3.19.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: ;-nologo;-MD;-Brepro
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/3/2021 11:35:23 AM.
+Project "C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdCXX\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\3.19.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.02
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/3.19.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_e327c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CMakeCCompilerABI.c
+  cmTC_e327c.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_e327c.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_9a3f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CMakeCXXCompilerABI.cpp
+  cmTC_9a3f1.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_9a3f1.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_37da1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CheckIncludeFile.c
+  cmTC_37da1.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_37da1.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_b072e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CheckIncludeFile.c
+  cmTC_b072e.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_b072e.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_21985.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CheckIncludeFile.c
+  cmTC_21985.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_21985.exe
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_598d5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CMAKE_SIZEOF_UNSIGNED_SHORT.c
+  cmTC_598d5.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_598d5.exe
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_8a538.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  TestEndianess.c
+  cmTC_8a538.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_8a538.exe
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of short passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_6fe2c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  SIZEOF_SHORT.c
+  cmTC_6fe2c.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_6fe2c.exe
+
+
+
+Determining size of int passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_4615e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  SIZEOF_INT.c
+  cmTC_4615e.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_4615e.exe
+
+
+
+Determining size of long passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_3a3ed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  SIZEOF_LONG.c
+  cmTC_3a3ed.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_3a3ed.exe
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_9e3ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  HAVE_LONG_LONG.c
+  cmTC_9e3ae.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_9e3ae.exe
+
+
+
+Determining if files locale.h exist passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_7a269.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  HAVE_LOCALE_H.c
+  cmTC_7a269.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_7a269.exe
+
+
+
+Determining if files stdio.h exist passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_3ef90.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  HAVE_STDIO_H.c
+  cmTC_3ef90.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_3ef90.exe
+
+
+
+Determining if the function localeconv exists passed with the following output:
+Change Dir: C:/Users/Primary User/Desktop/texture synthesis app/MY_Examples/FLTK-RS-Examples/template/target/rls/debug/build/fltk-sys-762000bc27d0417d/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_8ef11.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  CheckFunctionExists.c
+  cmTC_8ef11.vcxproj -> C:\Users\Primary User\Desktop\texture synthesis app\MY_Examples\FLTK-RS-Examples\template\target\rls\debug\build\fltk-sys-762000bc27d0417d\out\build\CMakeFiles\CMakeTmp\Debug\cmTC_8ef11.exe
+
+
+
