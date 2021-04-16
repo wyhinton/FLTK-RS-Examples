@@ -9,5 +9,4 @@ description = "my application"
 
 [dependencies]
 fltk = "0.12.0"
-rand = "0.8.0"
 
