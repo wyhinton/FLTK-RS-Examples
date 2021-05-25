@@ -40,9 +40,11 @@ impl ScrollGroup {
         bg.set_frame(FrameType::FlatBox);
         bg.set_color(Color::Red);
         container.add(&bg);
+        container.set_clip_children(true);
         // let mut test_frame÷
         // buttons_cont
         let mut buttons_container = Pack::new(x,y,7000,h,"");
+        // buttonS_container.set_clip_children(true);
         buttons_container.set_type(PackType::Horizontal);
         buttons_container.set_frame(FrameType::BorderFrame);
         buttons_container.set_color(Color::Blue);
@@ -55,7 +57,26 @@ impl ScrollGroup {
         for x in 0..10{
             buttons_container.add(&Button::default().with_size(7000/10,w/5).with_label(&x.to_string()));
         }
-
+        // buttons_container.draw2(move|widg|{
+        //     push_clip(x,y,w,h);
+        //     for x in 0..widg.children(){
+        //         fltk::group::GroupExt::child<fltk::widget::Widget>(x);
+        //         // let base = widg.child(x).into_widget();
+        //         // let base = widg.child(x).unwrap().into_widget();
+        //         widg.draw_child(&mut widg.child(x).unwrap());
+        //     }
+        //     pop_clip();
+        // });
+        container.draw2(move|widg|{
+            set_clip_region(x,y,w,h);
+            push_clip(x,y,w,h);
+            for x in 0..widg.children(){
+     
+                // fltk::group::GroupExt::child<fltk::widget::Widget>(x);
+                widg.draw_child(&mut widg.child(x).unwrap());
+            }
+            pop_clip();
+        });
         container.add(&buttons_container);
         container.add(&hbar.frame);
         let mut sg = ScrollGroup {
@@ -66,7 +87,7 @@ impl ScrollGroup {
         
         let mut pack_c = buttons_container.clone();
         let bar_c = sg.hscrollbar.frame.clone();
-
+        let cont_cl = container.clone();
         sg.pack.handle2(move |t, ev| {
             match ev {
                 Event::MouseWheel =>{
@@ -78,10 +99,14 @@ impl ScrollGroup {
                     
                     dbg!(pack_c.width());
                     if app::event_dy() < 0 && pack_x > -1*pack_c.width()+w{
+                        sg.set_damage_type(Damage::Scroll);
+                        cont_cl.set_damage_type(Damage::Scroll);
                         pack_c.resize(std::cmp::max(-1*pack_w+w, pack_x+dy*10), pack_y, pack_w, pack_c.height());
                         pack_c.redraw();
                     }
                     if app::event_dy() > 0 && pack_x < 0{
+                        sg.set_damage_type(Damage::Scroll);
+                        cont_cl.set_damage_type(Damage::Scroll);
                             pack_c.resize(std::cmp::min(0, pack_x+dy*10), pack_y, pack_w, pack_c.height());
                         pack_c.redraw();
                     }

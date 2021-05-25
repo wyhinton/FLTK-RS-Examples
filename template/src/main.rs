@@ -1,7 +1,6 @@
-//demonstrates a fuzzy search bar 
+//template for creating simple examples
 use fltk::*;
 use fltk::{app::*, frame::*, window::*, image::*, table::*, button::*, input::*, group::*};
-use rand::{distributions::Alphanumeric, Rng};
 
 
 #[derive(Debug, Clone)]

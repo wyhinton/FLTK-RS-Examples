@@ -8,6 +8,6 @@ description = "custom scroll group using fltk 0.15.1"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = "0.16.0"
+fltk = "0.16.5"
 rand = "0.8.0"
 

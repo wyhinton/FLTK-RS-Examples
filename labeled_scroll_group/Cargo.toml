@@ -8,6 +8,6 @@ description = "my application"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = "0.16.3"
+fltk = "1.0.13"
 rand = "0.8.0"
 
