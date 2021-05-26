@@ -33,4 +33,4 @@ Demonstrates creating a group that has a solid background color over which child
 
 Test
 
-![Background Fill Group](./.github/images/background_fill_group.png)
+![Background Fill Group](./.github/images/background_fill_group.PNG)
