@@ -26,3 +26,11 @@ A hardware accelerated pan/zoom canvas using [Speedy2d](https://github.com/Quant
 ![Speedy2d Canvas](./.github/images/speedy2d_canvas.gif)
 
 <!-- ![Speedy2d Canvas](./images/Speedy_2d_Pan_Zoom_Canvas.png) -->
+
+## Background Fill for Group
+
+Demonstrates creating a group that has a solid background color over which child widgets are drawn.
+
+Test
+
+![Background Fill Group](./.github/images/background_fill_group.png)

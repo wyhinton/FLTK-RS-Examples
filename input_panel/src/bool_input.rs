@@ -1,78 +1,66 @@
-use fltk::{app, group::*, input::*, frame::*, button::*, draw::*};
-use std::ops::{Deref, DerefMut};
-use crate::{CustomInputValue, CustomInputExt, Error, Result, IncorrectInputType, FloatInputSettings, NumInputSettings, Distance};
+use crate::{CustomInputExt, CustomInputValue, IncorrectInputType, Result};
+use fltk::{button::*, enums::*, group::*, prelude::*};
 use std::fmt;
-use snafu::{ensure, Backtrace, Snafu};
-// use syn::*;
-use super::Message;
-use std::str::FromStr;
-
-
-// use std::s
-// use super::Incc
+use std::ops::{Deref, DerefMut};
 
 #[derive(Clone)]
 pub struct CBoolInput {
-    pub pack: Pack, 
+    pub pack: Pack,
     pub input: CheckButton,
-    // pub inp: Aligned
 }
 
-
-impl CustomInputExt for CBoolInput{
-    fn value(&self)->CustomInputValue{
+impl CustomInputExt for CBoolInput {
+    fn value(&self) -> CustomInputValue {
         CustomInputValue::CiBool(self.input.is_checked())
     }
-    fn hide(&mut self){
+    fn hide(&mut self) {
         self.pack.hide();
     }
-    fn set_color(&mut self, color: fltk::enums::Color){
+    fn set_color(&mut self, color: fltk::enums::Color) {
         self.input.set_color(color);
     }
-    fn set_value(&mut self, val: CustomInputValue )->Result<()>{
-
+    fn set_value(&mut self, val: CustomInputValue) -> Result<()> {
         match val {
             CustomInputValue::CiFloat(inp) => inp,
-            _ => IncorrectInputType { kind: val }.fail()?
-       };
+            _ => IncorrectInputType { kind: val }.fail()?,
+        };
         Ok(())
     }
-    fn pack(&self)->Pack{
+    fn pack(&self) -> Pack {
         self.pack.clone()
     }
-    fn redraw_input(&mut self){
+    fn redraw_input(&mut self) {
         self.input.redraw()
     }
 }
 // fn foo() -> Result<(), MyError> {
 //     WidgetNotFound { widget_name: "Quux" }.fail()
 // }
-impl fmt::Debug for CBoolInput{
+impl fmt::Debug for CBoolInput {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{}", "hello i'm a bool input")
     }
 }
 
 impl CBoolInput {
-    pub fn new()-> Self {
-        let mut pack = Pack::new(25,0,75,25,"");
+    pub fn new() -> Self {
+        let mut pack = Pack::new(25, 0, 75, 25, "");
         pack.end();
-        
-        let mut input = CheckButton::new(0,0,25,25,"");
+
+        let mut input = CheckButton::new(0, 0, 25, 25, "");
         input.set_color(Color::Dark3);
         input.set_frame(FrameType::FlatBox);
         // pack.add(&spacer_frame);
         pack.add(&input);
 
-        let mut fi = CBoolInput{
-            pack: pack, 
+        let mut fi = CBoolInput {
+            pack: pack,
             input: input,
         };
 
         fi
     }
 }
-
 
 impl Deref for CBoolInput {
     type Target = Pack;

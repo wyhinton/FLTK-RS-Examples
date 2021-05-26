@@ -1,7 +1,7 @@
 //demonstrates a fuzzy search bar
 use fltk::prelude::*;
 use fltk::*;
-use fltk::{app::*, button::*, frame::*, group::*, image::*, input::*, table::*, window::*};
+use fltk::{app::*, button::*, enums::*, group::*, window::*};
 pub mod scroll_group;
 use fltk::{prelude::GroupExt, prelude::WidgetExt};
 use scroll_group::ScrollGroup;
@@ -19,16 +19,25 @@ fn main() {
     let mut win = Window::new(200, 200, 1000, 1000, "Template");
     win.make_resizable(true);
     let sg_width = 300;
-    let mut test_pack = Pack::new(0, 0, sg_width, 100, "");
+    let mut test_pack = Pack::new(100, 500, sg_width, 1000, "");
 
     test_pack.end();
-    let sg = ScrollGroup::new(
+    for x in 0..20 {
+        let mut but = Button::default()
+            .with_size(100, 50)
+            .with_label(&x.to_string());
+        but.set_color(Color::Red);
+        test_pack.add(&but);
+    }
+
+    let mut sg = ScrollGroup::new(
         (win.width() - sg_width) / 2,
         300,
         sg_width,
         500,
         test_pack.clone(),
     );
+    sg.pack.add(&test_pack);
 
     win.end();
     win.show();

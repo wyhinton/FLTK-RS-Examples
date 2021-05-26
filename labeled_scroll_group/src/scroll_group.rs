@@ -31,24 +31,20 @@ impl ScrollGroup {
         master_container.make_resizable(false);
         let mut s_container = Group::new(x, y, w, h, "");
         s_container.set_frame(FrameType::FlatBox);
-        s_container.set_color(Color::Black);
+        // s_container.set_color(Color::Black);
         let mut inner_container = Group::new(x, y, w - bar_width, h, "");
         inner_container.set_frame(FrameType::FlatBox);
         inner_container.set_color(Color::Blue);
         //inner contents
-        let mut pack = Pack::new(x, y, w - bar_width, 0, "");
+        let mut pack = inner_group.clone();
+        pack.resize(pack.x(), pack.y(), w - bar_width, 0);
+        // pack.resize(pack.x(), pack.y(), w - bar_width, 0);
+        // let mut pack = Pack::new(x, y, w - bar_width, 0, "");
+        // pack.add(&inner_group);
         pack.end();
         inner_container.end();
         s_container.end();
         master_container.end();
-        //add some buttons
-        for x in 0..20 {
-            let mut but = Button::default()
-                .with_size(100, 50)
-                .with_label(&x.to_string());
-            but.set_color(Color::Red);
-            pack.add(&but);
-        }
 
         let bar_button_x = master_container.x() + master_container.width() - 25;
         let bar_button_y = master_container.y();
@@ -72,7 +68,6 @@ impl ScrollGroup {
             move |widg| {
                 let height_ratio =
                     widg.height() as f32 / inner_contents_height_clone.borrow_mut().clone() as f32;
-                let bar_height = (widg.height() as f32 * height_ratio) as i32;
 
                 let dif_height = widg.height() - inner_contents_height_clone.borrow_mut().clone();
                 let min_height = widg.y() + dif_height;
@@ -107,7 +102,6 @@ impl ScrollGroup {
 
         let mut sss = s_container.clone();
         inner_container.handle({
-            let mut scroll_bar_clone = scroll_bar.clone();
             move |s, ev| match ev {
                 Event::MouseWheel => {
                     // test_frame_cl.redraw();
