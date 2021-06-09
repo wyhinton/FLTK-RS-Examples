@@ -1,4 +1,4 @@
-use fltk::{app::*, frame::*, window::*, image::*, table::*, button::*};
+use fltk::{prelude::*,  table::*, };
 use super::Result;
 use super::Message;
 
@@ -17,21 +17,10 @@ pub struct SearchTable{
 }
 fn closest_multiple(mut n: i32, mut x: i32) -> i32 { 
     let result = ((n + x/2) / x) * x;
-
-    // println!("x is {}, n is {}", x, n );
-    // if (x > n){
-    //     println!("{}", "it was less than");
-    //     return x; 
-    // } 
-    // let mut tn = n; 
-    // tn = n + (x / 2); 
-    // // n = n - (n % x); 
-    // tn = tn - (tn.rem_euclid(x)); 
-    // println!("tn is {}", tn );
     return result; 
 } 
 
-fn format_table(num_cols: u32, p_width: i32, t: &Table, item_count: usize){
+fn format_table(num_cols: i32, p_width: i32, t: &Table, item_count: usize){
     let mut tc = t.clone();
     println!("closet multiple is {}", closest_multiple(num_cols as i32, item_count as i32));
     tc.set_rows(20);
@@ -50,10 +39,11 @@ impl SearchTable{
         let ic = st.items.clone(); 
         
         format_table(8, w, &st.table, ic.len());        
-        st.table.draw_cell2(move |t, ctx, row, col, x, y, w, h| match ctx {
+        st.table.draw_cell(move |t, ctx, row, col, x, y, w, h| match ctx {
             TableContext::Cell => {
                 let t_index = row*t.cols() as i32+ col;
-                let mut button = TableButton::new(x,y,w,h, &ic[t_index as usize]);
+                let mut button = TableButton::new(x,y,w,h);
+                button.set_label(&ic[t_index as usize]);
                 t.add(&button.wid);
             },
             _ => ()
@@ -67,17 +57,17 @@ impl SearchTable{
     }
     //draw only the buttons with a match score greater than 0
     pub fn update(&mut self, search_results: Vec<Result>, s: fltk::app::Sender<Message>){
-        fltk::GroupExt::clear(&mut self.table);
-        //fix
+        fltk::prelude::GroupExt::clear(&mut self.table);
         format_table(8, self.table.width(), &self.table, search_results.len());       
 
-        self.table.draw_cell2(move |t, ctx, row, col, x, y, w, h| match ctx {
+        self.table.draw_cell(move |t, ctx, row, col, x, y, w, h| match ctx {
             TableContext::Cell => {
                 let t_index = row*t.cols() as i32+ col;
-                if (t_index < search_results.len() as i32){
+                if t_index < search_results.len() as i32{
                     let cur_res = &search_results.clone()[t_index as usize];
                     if cur_res.score > 0 {
-                        let mut button = TableButton::new(x,y,w,h, &cur_res.val.to_string());
+                        let mut button = TableButton::new(x,y,w,h);
+                        button.set_label(&cur_res.val.to_string());
                         &button.redraw();
                         t.add(&button.wid);
                         
@@ -91,19 +81,19 @@ impl SearchTable{
     
     }
     //reset table to show all values
-    // pub fn reset(&mut self, s: fltk::app::Sender<Message>, all_items: Vec<String>){
     pub fn reset(&mut self, s: fltk::app::Sender<Message>){
         println!("{}", "should reset table" );
-        fltk::GroupExt::clear(&mut self.table);
+        fltk::prelude::GroupExt::clear(&mut self.table);
         format_table(8, self.table.width(), &self.table, self.items.len());   
         let ric = self.items.clone();    
-        self.table.draw_cell2(move |t, ctx, row, col, x, y, w, h| match ctx {
+        self.table.draw_cell(move |t, ctx, row, col, x, y, w, h| match ctx {
             TableContext::Cell => {
                 let t_index = row*t.cols() as i32 + col;
                 println!("all items len at reset is {}", ric.len().to_string());
                 if t_index < ric.len() as i32 {
-                    let mut button = TableButton::new(x,y,w,h, &ric[t_index as usize]);
-                    button.set_callback2(|b| println!("Selected: {}", b.label()));
+                    let mut button = TableButton::new(x,y,w,h);
+                    button.set_label(&ric[t_index as usize]);
+                    button.set_callback(|b| println!("Selected: {}", b.label()));
                     t.add(&button.wid);  
                 }
             },

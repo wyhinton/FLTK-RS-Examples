@@ -1,7 +1,5 @@
 //demonstrates a fuzzy search bar 
-use fltk::*;
-use fltk::{app::*, frame::*, window::*, image::*, table::*, button::*, input::*, group::*};
-use sublime_fuzzy::best_match;
+use fltk::{app, app::*, window::*, prelude::*, input::*, group::*};
 use rand::{distributions::Alphanumeric, Rng};
 
 mod search_bar;
@@ -11,7 +9,6 @@ use search_bar::Result;
 mod search_table;
 use search_table::SearchTable;
 
-// #[derive(Debug, Clone, Send, Sync)]
 #[derive(Debug, Clone)]
 pub enum Message {
     Test,
@@ -21,7 +18,7 @@ pub enum Message {
     SetNumStrings(i32),
     
 }
-    ///generate array of random ASCII strings
+///generate array of random ASCII strings
 fn random_string_arr(n_strings: i32, min_str_length: i32, max_str_length: i32) -> Vec<String>{
     let mut string_arr = vec![];
     
@@ -47,7 +44,7 @@ fn main() {
     let initial_strings = random_string_arr(initial_amount, 5, 30);
 
     let sb_width = 600;
-    let mut sb = SearchBar::new((win.width()/2)-sb_width/2,200,sb_width,25, initial_strings.clone(), s.clone());
+    let mut sb = SearchBar::new((win.width()/2)-sb_width/2,200,sb_width,25, initial_strings.clone());
     let mut table = SearchTable::new(sb.x(),sb.y()+sb.height(), sb_width, 500, initial_strings.clone(), vec![], s.clone()) ;
 
     let ip_width = 100;
@@ -58,7 +55,7 @@ fn main() {
     input_pack.end();
 
     let nsis = s.clone();
-    num_strings_input.set_callback2(move |widg| {
+    num_strings_input.set_callback(move |widg| {
         println!("got input cb {}", "");
         match widg.value().parse(){
             Ok(n)=>nsis.send(Message::SetNumStrings(n)),

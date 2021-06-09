@@ -1,10 +1,10 @@
-use fltk::frame::*;
-use fltk::image::*;
-use fltk::{app::*, image::*, group::*, input::*, draw::*};
+use fltk::{ frame::*, prelude::*, image::*, group::*, input::*, draw::*, enums::*};
+use std::borrow::BorrowMut;
 use std::ops::{Deref, DerefMut};
 use sublime_fuzzy::best_match;
-// use syn::*;
 use super::Message;
+use std::cell::RefCell;
+use std::rc::Rc;
 
 #[derive(Debug, Eq, Clone, Ord, PartialEq, PartialOrd)]
 pub struct Result {
@@ -15,16 +15,15 @@ pub struct Result {
 pub struct SearchBar {
     pub pack: Pack, 
     pub input: Input,
-    icon: Frame,
     search_items: Vec<String>,
+    pub value: Rc<RefCell<String>>,
 }
 
 fn fuzzy_search(widg: &mut Input, items: Vec<String>, s: fltk::app::Sender<Message>) {
-    println!("sc is {:?}", items);
     let mut mc = vec![];
     if !widg.value().is_empty(){
         //remove "Search..." text when adding input
-        widg.draw2(move |b|{
+        widg.draw(move |b|{
             set_draw_color(Color::Black);
             draw_text2("", b.x() + 10 , b.y(), b.width(), b.height(), Align::Inside | Align::Left );
         });
@@ -50,11 +49,11 @@ fn fuzzy_search(widg: &mut Input, items: Vec<String>, s: fltk::app::Sender<Messa
                 }
             }
         }  
-            //sort our list of results by the their score values
+        
         mc.sort_by(|a, b| b.score.cmp(&a.score));
         s.send(Message::UpdateSearch(mc.clone()));
     } else {
-        widg.draw2(move |b|{
+        widg.draw(move |b|{
             set_draw_color(Color::Black);
             draw_text2("Search...", b.x() + 10 , b.y(), b.width(), b.height(), Align::Inside | Align::Left );
         });
@@ -64,58 +63,55 @@ fn fuzzy_search(widg: &mut Input, items: Vec<String>, s: fltk::app::Sender<Messa
 }
 
 impl SearchBar {
-    pub fn new(x: i32, y: i32, w: i32, h: i32, s_items: Vec<String>, s: fltk::app::Sender<Message>) -> Self {
+    pub fn new(x: i32, y: i32, w: i32, h: i32, s_items: Vec<String>) -> Self {
         let icon_w = 24; 
         let input_w = w-icon_w;
-        let mut sb = SearchBar {
-            pack: Pack::new(x,y,w,h,""),
-            icon: Frame::new(x,y,icon_w,h,""),
-            input: Input::new(x,y,input_w,h,""),
-            search_items: s_items.clone(),            
-        };
-        //icon frame styling       
+        let val = Rc::from(RefCell::from("".to_string()));
+        let mut pack = Pack::new(x,y,w,h, None);
+        
+        let mut icon = Frame::new(x,y,icon_w,h, None);
         let mut search_icon = SvgImage::load("search-24px.svg").unwrap();
-        sb.icon.draw2(move |f|{
+        icon.draw(move |f|{
             search_icon.draw(f.x(), f.y(), 24, 24);    
         });
-        sb.icon.set_frame(FrameType::NoBox); 
-        
-        //pack styling
-        sb.pack.end();
-        sb.pack.set_type(PackType::Horizontal);
-        sb.pack.set_frame(FrameType::BorderFrame);
-        sb.pack.set_color(Color::Black);
-
-        //input styling
-        sb.input.draw2(move |b|{
+        icon.set_frame(FrameType::NoBox); 
+        let mut input = Input::new(x,y,input_w,h, None);
+        input.draw(move |b|{
             set_draw_color(Color::Black);
             draw_text2("Search...", b.x() + 10 , b.y(), b.width(), b.height(), Align::Inside | Align::Left );
         });
-
-        //On Enter do fuzzy search
-        let sc = s_items.clone();
-        let sx = s.clone();
-        sb.input.set_callback2(move |b| {
-            fuzzy_search(b, sc.clone(), sx.clone())
-        });
-
-        sb.input.handle2(move |t, ev| {
+        let val_cl = val.clone();
+        input.handle(move |t, ev| {
             match ev {
                 Event::KeyDown =>{
                     println!("{}", "got a key down" );
-                    t.do_callback();
+                    dbg!(t.value());
+                    *val_cl.borrow_mut() = t.value();
                     true
                 }
                 _=>false 
             }
         });
-            
+
+        pack.end(); 
+        pack.set_type(PackType::Horizontal);
+        pack.set_frame(FrameType::BorderFrame);
+        pack.set_color(Color::Black);
+
+        let mut sb = SearchBar {
+            pack: Pack::new(x,y,w,h,""),
+            input: Input::new(x,y,input_w,h,""),
+            search_items: s_items.clone(),       
+            value:  val,
+        };
+
+        sb.pack.end();
         sb
     }
     pub fn set_items(&mut self, new_items: Vec<String>, s: fltk::app::Sender<Message>){
         println!("setting search bar items:  {:?}", new_items);
         self.search_items = new_items.clone();
-        self.input.set_callback2(move |b| {
+        self.input.set_callback(move |b| {
             fuzzy_search(b, new_items.clone(), s.clone())
         });
     }

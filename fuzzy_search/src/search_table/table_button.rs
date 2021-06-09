@@ -1,21 +1,16 @@
 //a custom TableButton widget for our table
 
-use fltk::{widget::*, button::*, draw::*};
-use fltk::prelude::*;
-use super::Message;
+use fltk::{widget::Widget, enums::*, prelude::*, draw::*};
 use std::ops::{Deref, DerefMut};
-// use syn::*;
-// #[derive(WidgetBase, WidgetExt, Debug)]
+
 pub struct TableButton{
-    // button: Button,
     pub wid: Widget,
 }
 
 impl TableButton {
-    pub fn new(x: i32, y: i32, w: i32, h: i32, label: &str) -> TableButton {
+    pub fn new(x: i32, y: i32, w: i32, h: i32) -> TableButton {
         let mut tb = TableButton{
-            // button: Button::new(x,y,w,h, &label)
-            wid: Widget::new(x,y,w,h,label)
+            wid: Widget::new(x,y,w,h, None)
         };
         tb.draw();
         tb.handle();
@@ -23,7 +18,7 @@ impl TableButton {
     }
     fn draw(&mut self) {
         let padding = 10;
-        self.wid.draw2(move |b| {
+        self.wid.draw(move |b| {
             draw_box(
                 FrameType::GtkDownBox,
                 b.x(),
@@ -41,7 +36,6 @@ impl TableButton {
             );
             let tt = &b.label()[..];
             let (tx, ty) = fltk::draw::measure(&tt, false);
-            // println!("my lable is {}", label.to_string());
             if tx > b.width() - padding {
                 let fin = vec![&b.label()[..6], "…"].join("");
                 draw_text(&fin[..], b.x() + padding , b.y() + 50);
@@ -52,7 +46,7 @@ impl TableButton {
     }
     fn handle(&mut self) {
         let mut wid = self.wid.clone();
-        self.wid.handle(move |ev| match ev {
+        self.wid.handle(move |widg, ev| match ev {
             Event::Push => {
                 wid.do_callback();
                 true
