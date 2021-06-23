@@ -1,5 +1,5 @@
 [package]
-name = "fuzzy_search"
+name = "event_dispatcher"
 version = "0.1.0"
 authors = ["wyhinton <wyhinton189@gmail.com>"]
 edition = "2018"
@@ -8,7 +8,7 @@ description = "my application"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = "^1.0.18"
-sublime_fuzzy = "0.7.0"
-rand = "0.8.0"
-
+fltk = { version = "^1.0.18"}
+hey_listen = "0.5"
+lazy_static = "1.4.0"
+event-emitter-rs = "0.1.4"

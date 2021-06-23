@@ -6,6 +6,7 @@ A small collection of modular UI features made with the [fltk-rs](https://github
 
 - [FLTK-RS Examples](#fltk-rs-examples)
 - [Table of Contents](#table-of-contents)
+  - [State](#state)
   - [Custom Widget Examples](#custom-widget-examples)
     - [Fuzzy Search Table](#fuzzy-search-table)
     - [Image Selection](#image-selection)
@@ -15,8 +16,15 @@ A small collection of modular UI features made with the [fltk-rs](https://github
   - [Event Handling](#event-handling)
     - [Crossbeam Channels](#crossbeam-channels)
     - [Ordinal Custom Events](#ordinal-custom-events)
+    - [Misc](#misc)
 
 ---
+
+## State
+
+Use the [state crate](https://github.com/sergiobenitez/state) to mutate and reference a hashmap containing widget data.
+
+![State Crate](./.github/images/state_counter.gif)
 
 ## Custom Widget Examples
 
@@ -81,3 +89,9 @@ win.handle(move |_, ev|
 });
 
 ```
+
+### Misc
+
+- For detailed windows installation seeksthe fltk-rs wiki
+- Make sure your project directory path isn't too long, see [https://stackoverflow.com/questions/49603759/msb6003-the-specified-task-executable-cl-exe-could-not-be-run](https://stackoverflow.com/questions/49603759/msb6003-the-specified-task-executable-cl-exe-could-not-be-run)
+- `children()` for `Scroll` counts the vertical and horizontal sliders, so subtract 3 from that number to get the actual count
