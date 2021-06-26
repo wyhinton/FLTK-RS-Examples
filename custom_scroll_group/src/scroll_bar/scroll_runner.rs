@@ -40,6 +40,12 @@ impl Runner {
         let emmiter_cl_4 = emmiter.clone();
         emmiter.on(CustomScrollEvent::CHILD_RESIZE, move|value:  WidgDimensions|{
             let relative =  (arc_frame_cl.parent().unwrap().height() as f32 / value.height as f32);
+            if (relative > 1.0){
+                arc_frame_cl.set_color(arc_frame_cl.parent().unwrap().color())
+            } else {
+                arc_frame_cl.set_color(Color::Dark3)
+            }
+            dbg!(relative);
             let new_runner_height = relative*arc_frame_cl.parent().unwrap().height() as f32;
             dbg!(arc_frame_cl.height()-new_runner_height as i32);
             let height_difference = arc_frame_cl.height()-new_runner_height as i32;
@@ -94,16 +100,15 @@ impl Runner {
             Event::Drag => {
                 count.increment(1);
                 dbg!("got drag");
-                if (count.get() % 3) == 0{
+                if (count.get() % 5) == 0{
                     emmiter_cl.emit(CustomRunnerEvent::SET_RUNNER_POS, (app::event_x(), app::event_y()));
                 }
                 true
+            },
+            Event::Push=>{
+                dbg!("got push");
+                true
             }
-            // Event::Resize=>{
-            //     dbg!("got frame resize");
-            //     dbg!(widg.width());
-            //     true
-            // }
             _ => false,
         });
         Runner {

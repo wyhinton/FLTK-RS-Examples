@@ -8,5 +8,5 @@ description = "my application"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = { version = "^1.0.18"}
-rapier2d = { version = "*", features = [ "simd-stable" ] }
+fltk = { version = "^1.0.19"}
+

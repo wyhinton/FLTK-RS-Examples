@@ -35,7 +35,8 @@ impl ScrollBar {
 
         let group = ArcGroup::<Group>::new(Group::new(x, y, w, h, None));
         group.set_frame(FrameType::FlatBox);
-        group.set_color(Color::White);
+        // group.set_color(Color::White);
+        group.set_color(Color::Dark2);
 
         group.draw(move|widg|{
             let x = widg.parent().unwrap().x()+ widg.parent().unwrap().width()-25;

@@ -2,6 +2,7 @@ use fltk::{app, button::Button, group::*, frame::Frame, enums::*, group::Pack, p
 use state::Storage;
 use std::collections::HashMap;
 use std::sync::Mutex;
+// use std::rc::Rc;
 
 //convience macro for extracting value of an enum
 #[macro_use]
@@ -46,7 +47,6 @@ impl Counter {
 
         let mut pack = Pack::new(0,0,100,150, None);
         pack.set_frame(FrameType::BorderFrame);
-        // pack.set_color(Color::Black);
         //increment button
         let mut but_inc = Button::default().with_size(0, 40).with_label("+");
         but_inc.set_color(Color::Green);
@@ -93,6 +93,7 @@ impl Counter {
 
         //decrement value, update frame label
         let mut frame_cl_2 = frame.clone();
+        // let mut frame_cl_2 = Rc::clone(frame);
         but_dec.set_callback(move|_|{
             let enum_innner_val = GLOBAL_MAP.get().lock().unwrap().get(id).unwrap().clone();
             use WidgetValue::*;
@@ -137,8 +138,17 @@ fn main(){
     //update our "App State" frame whenever the counter buttons are presssed
     state_frame.handle(move |widg, ev| 
       if ev == GlobalEvents::COUNTER_UPDATE.into(){
-          let counter_1_val = as_variant!(*GLOBAL_MAP.get().lock().unwrap().get("Counter 1").unwrap(), WidgetValue::Integer32).expect("failed to get int");
-          let counter_2_val = as_variant!(*GLOBAL_MAP.get().lock().unwrap().get("Counter 2").unwrap(), WidgetValue::Integer32).expect("failed to get int");
+        let mut counter_1_val = 0;
+        if let Some(WidgetValue::Integer32(val)) = GLOBAL_MAP.get().lock().unwrap().get("Counter 1"){
+        counter_1_val = *val;
+        }
+        let mut counter_2_val = 0;
+        if let Some(WidgetValue::Integer32(val)) = GLOBAL_MAP.get().lock().unwrap().get("Counter 2"){
+        counter_2_val = *val;
+        }
+        //   dbg!(val);
+        //   let counter_1_val = as_variant!(*GLOBAL_MAP.get().lock().unwrap().get("Counter 1").unwrap(), WidgetValue::Integer32).expect("failed to get int");
+        //   let counter_2_val = as_variant!(*GLOBAL_MAP.get().lock().unwrap().get("Counter 2").unwrap(), WidgetValue::Integer32).expect("failed to get int");
           let state_str = format!("Counter 1 Val: {}, Counter 2 Val: {}", counter_1_val, counter_2_val);
           widg.set_damage(true);
           widg.set_label(&state_str);
