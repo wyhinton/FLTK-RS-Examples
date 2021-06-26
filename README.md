@@ -8,7 +8,7 @@ A small collection of modular UI features made with the [fltk-rs](https://github
 - [Table of Contents](#table-of-contents)
   - [State](#state)
     - [State](#state-1)
-    - [comp_sta](#comp_sta)
+    - [comp_state](#comp_state)
   - [Custom Widget Examples](#custom-widget-examples)
     - [Fuzzy Search Table](#fuzzy-search-table)
     - [Image Selection](#image-selection)
@@ -24,14 +24,17 @@ A small collection of modular UI features made with the [fltk-rs](https://github
 
 ## State
 
-### State
-
-Use the [state crate](https://github.com/sergiobenitez/state) to mutate and reference a hashmap containing widget data.
-
 ![State Crate](./.github/images/state_counter.gif)
 
-### comp_sta
-Use [comp_state](https://github.com/rebo/comp_state) to mutate and reference local counter values in a react-like fashion. 
+Handling state in rust can be tricky. These examples with a simple counter demonstrate different approaches to managing and mutating state in your app.
+
+### State
+
+Use the [state crate](https://github.com/sergiobenitez/state) to mutate and reference a global hashmap of widget values.
+
+### comp_state
+
+Use [comp_state](https://github.com/rebo/comp_state) to mutate and reference local counter values in a react-like fashion. Requires running with `cargo +nightly run`
 
 ## Custom Widget Examples
 
