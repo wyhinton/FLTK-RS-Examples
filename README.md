@@ -7,6 +7,8 @@ A small collection of modular UI features made with the [fltk-rs](https://github
 - [FLTK-RS Examples](#fltk-rs-examples)
 - [Table of Contents](#table-of-contents)
   - [State](#state)
+    - [State](#state-1)
+    - [comp_sta](#comp_sta)
   - [Custom Widget Examples](#custom-widget-examples)
     - [Fuzzy Search Table](#fuzzy-search-table)
     - [Image Selection](#image-selection)
@@ -22,9 +24,14 @@ A small collection of modular UI features made with the [fltk-rs](https://github
 
 ## State
 
+### State
+
 Use the [state crate](https://github.com/sergiobenitez/state) to mutate and reference a hashmap containing widget data.
 
 ![State Crate](./.github/images/state_counter.gif)
+
+### comp_sta
+Use [comp_state](https://github.com/rebo/comp_state) to mutate and reference local counter values in a react-like fashion. 
 
 ## Custom Widget Examples
 
