@@ -7,11 +7,7 @@ use fltk::{
 };
 use image::*;
 use image::io::Reader as ImageReader;
-use speedy2d::GLRenderer;
-use speedy2d::color::Color;
-use speedy2d::dimen::Vector2;
-use speedy2d::image::{ImageSmoothingMode};
-use speedy2d::font::{TextLayout, TextOptions};
+use speedy2d::{GLRenderer, color::*, dimen::Vector2, image::*, font::*, shape::*};
 use dyn_clone::DynClone;
 use std::cell::RefCell;
 use std::rc::Rc;
@@ -169,7 +165,7 @@ impl CanvasItemExt for CanvasImage{
 
         let to_draw_image = match graphics.create_image_from_raw_pixels(
             img_type,
-            ImageSmoothingMode::NearestNeighbor,
+            ImageSmoothingMode::Linear,
             Vector2::new(img_width, img_height),
             &bytes,
         ){
@@ -257,17 +253,17 @@ fn main() {
     let container = CanvasContainer::new(CanvasState{
         offset: Vector2::new(0.0, 0.0),
         items: vec![
-            Box::new(CanvasCircle::new(Vector2::new(-100.0, 300.0), 300.0, Color::BLUE)),   
-            Box::new(CanvasImage::new("imgs/forest.jpg", Vector2::new(000.0, 100.0), 0.5)),
-            Box::new(CanvasImage::new("imgs/smiley.png", Vector2::new(-200.0, 100.0), 0.5)),
-            Box::new(CanvasImage::new("imgs/rust-logo.png", Vector2::new(300.0, 500.0), 0.5)),
-            Box::new(CanvasCircle::new(Vector2::new(200.0, 200.0), 100.0, Color::RED)),   
+            Box::new(CanvasImage::new("imgs/forest.jpg", Vector2::new(000.0, 100.0), 0.2)),
+            Box::new(CanvasImage::new("imgs/rust-logo.png", Vector2::new(300.0, 500.0), 0.2)),
+            Box::new(CanvasCircle::new(Vector2::new(1200.0, 200.0), 100.0, Color::RED)),   
+            Box::new(CanvasCircle::new(Vector2::new(1300.0, 200.0), 100.0, Color::GREEN)),   
+            Box::new(CanvasCircle::new(Vector2::new(1400.0, 200.0), 100.0, Color::BLUE)),   
         ],
-        screen_pos: Vector2::new(0, 0),
+        screen_pos: Vector2::new(-475, 282),
         world_pos: Vector2::new(0.0, 0.0),
         drag_coord: Vector2::new(0, 0),
         drag_start: Vector2::new(0,0),
-        zoom_scale: Vector2::new(0.5, 0.5),
+        zoom_scale: Vector2::new(0.2, 0.2),
     });
 
 
@@ -329,22 +325,24 @@ fn main() {
     win.draw(
         {
             let container_rc = container.clone();
+            let font_size = 15.0;
+            let text_y = font_size+3.0;
+            let bottom_bar_rect = Rectangle::new(Vector2::new(0.0, wind_size as f32 - 20.0), Vector2::new(wind_size as f32, wind_size as f32));
             move|_|{
             renderer.draw_frame(|graphics| {
-            let font_size = 15.0;
             let scene = container_rc.0.borrow();
-            graphics.clear_screen(Color::WHITE);
+            graphics.clear_screen(Color::DARK_GRAY);
             for x in &scene.items{
                 x.draw(graphics, scene.offset, scene.zoom_scale);
             };
-
             let zoom_text = helvetica_font.layout_text(&format!("Zoom: x: {}, y: {}", format!("{:.1$}", scene.zoom_scale.x.to_string(), 4),  format!("{:.1$}", scene.zoom_scale.y.to_string(), 4)), font_size, TextOptions::new());
             let event_text = helvetica_font.layout_text(&format!("Event: x: {}, y: {}", app::event_x(), app::event_y()), font_size, TextOptions::new());
             let offset_text = helvetica_font.layout_text(&format!("Offset: x: {}, y: {}", format!("{:.1$}", scene.offset.x.to_string(), 5),  format!("{:.1$}", scene.offset.y.to_string(), 5)), font_size, TextOptions::new());
-            
-            graphics.draw_text((0.0, wind_size as f32 - font_size), Color::BLACK, &zoom_text);
-            graphics.draw_text((180.0, wind_size as f32 - font_size), Color::BLACK, &event_text);
-            graphics.draw_text((360.0, wind_size as f32 - font_size), Color::BLACK, &offset_text);
+            graphics.draw_rectangle(bottom_bar_rect.clone(), Color::from_int_rgba(0, 0, 0, 150));
+            graphics.draw_text((0.0, wind_size as f32 - text_y), Color::WHITE, &zoom_text);
+            graphics.draw_text((180.0, wind_size as f32 - text_y), Color::WHITE, &event_text);
+            graphics.draw_text((360.0, wind_size as f32 - text_y), Color::WHITE, &offset_text);
+    
         });
 
     }});
