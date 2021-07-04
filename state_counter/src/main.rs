@@ -2,7 +2,6 @@ use fltk::{app, button::Button, group::*, frame::Frame, enums::*, group::Pack, p
 use state::Storage;
 use std::collections::HashMap;
 use std::sync::Mutex;
-// use std::rc::Rc;
 
 //convience macro for extracting value of an enum
 #[macro_use]
@@ -51,10 +50,8 @@ impl Counter {
         let mut but_inc = Button::default().with_size(0, 40).with_label("+");
         but_inc.set_color(Color::Green);
 
-
-
         //frame for displaying current counter
-                //fetch counter starting value
+        //fetch counter starting value
         let display_label = match map.get(id.into()).unwrap(){
             WidgetValue::Integer32(val)=>{
                 let my_val = val.to_string();

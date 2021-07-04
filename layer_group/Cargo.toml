@@ -8,5 +8,13 @@ description = "my application"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = { version = "^1.0.19"}
-
+fltk = { version = "1.0.21" }
+comp_state = "0.2.6"
+uuid = {version = "0.8.2", features = ["v4"]}
+event-emitter-rs = "0.1.4"
+serde = { version = "1.0.126", features = ["derive"] }
+state = { version = "0.5.2", features = ["tls"] }
+crossbeam-channel = "0.5.1"
+lazy_static = "1.4.0"
+dyn-clone = "1.0.4"
+dashmap = "4.0.2"
