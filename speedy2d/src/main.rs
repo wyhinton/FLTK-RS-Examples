@@ -18,13 +18,11 @@ use std::rc::Rc;
 
 type SpeedyColor = speedy2d::color::Color; 
 
-//C++ tutorial 
+//C++ tutorial on implimenting pan/zoom
 // https://www.youtube.com/watch?v=ZQ8qtAizis4&t=574s
-#[derive(Debug, Clone)]
-pub enum Message {
-    Test,   
-}
 
+//everything we'll draw to the canvas will impl the CanvasItemExt trait
+//dyn_clone crate used for convenient cloneing of heap allocated trait objects (Box<dyn CanvasitemExt>)
 pub trait CanvasItemExt:DynClone + std::fmt::Debug{
     fn coords(&self)->Vector2<f32>;
     fn set_coords(&mut self, coords: Vector2<f32>);
@@ -34,8 +32,9 @@ pub trait CanvasItemExt:DynClone + std::fmt::Debug{
 dyn_clone::clone_trait_object!(CanvasItemExt);
 
 pub type CanvasItem = Box<dyn CanvasItemExt>;
+
 #[derive(Clone, Debug)]
-pub struct CanvasSettings{
+pub struct CanvasState{
     pub offset: Vector2<f32>,
     pub items: Vec<CanvasItem>,
     pub screen_pos: Vector2<i32>,
@@ -45,13 +44,14 @@ pub struct CanvasSettings{
     pub zoom_scale: Vector2<f32>,
 }
 
-type CanvasRef = Rc<RefCell<CanvasSettings>>;
+type CanvasRef = Rc<RefCell<CanvasState>>;
+//wrapper struct for easier interior mutability of our canvas data
 #[derive(Clone)]
 struct CanvasContainer(CanvasRef);
 
 impl CanvasContainer{
-    fn new(inner: CanvasSettings)->CanvasContainer{
-        let canvas = CanvasSettings{ 
+    fn new(inner: CanvasState)->CanvasContainer{
+        let canvas = CanvasState{ 
             offset: inner.offset.clone(),
             items: inner.items.clone(),
             screen_pos: inner.screen_pos.clone(),
@@ -104,6 +104,7 @@ impl CanvasContainer{
     }
 }
 
+//for drawing rgb images 
 #[derive(Clone)]
 pub struct CanvasImage{
     data: Vec<u8>,
@@ -183,6 +184,7 @@ impl CanvasItemExt for CanvasImage{
         graphics.draw_rectangle_image(rect, &to_draw_image);
     }
 }
+//for drawing circles
 #[derive(Clone)]
 pub struct CanvasCircle{
     pos: Vector2<f32>,
@@ -252,7 +254,7 @@ fn main() {
     gl::load_with(|s| win.get_proc_address(s));
     let mut renderer = unsafe { GLRenderer::new_for_current_context((wind_size as u32, wind_size as u32)) }.unwrap();
 
-    let container = CanvasContainer::new(CanvasSettings{
+    let container = CanvasContainer::new(CanvasState{
         offset: Vector2::new(0.0, 0.0),
         items: vec![
             Box::new(CanvasCircle::new(Vector2::new(-100.0, 300.0), 300.0, Color::BLUE)),   
@@ -268,23 +270,31 @@ fn main() {
         zoom_scale: Vector2::new(0.5, 0.5),
     });
 
-    let container_rc_handle = container.clone();
-    let mut win_cl = win.clone();
-    win.handle(Box::new(move |ev| match ev {
+
+    win.handle({
+        let container_rc_handle = container.clone();
+        let mut win_cl = win.clone();
+        move |_, ev| match ev {
+        //set a start point for a drag event
         Event::Push => {
-            println!("Pushed");
             container_rc_handle.set_drag_start(app::event_x(), app::event_y());
             true
         },
+        //zoom in/out with mousewheel up/down
         Event::MouseWheel=>{
-            if app::event_dy() < 0 {
-                container_rc_handle.zoom(app::event_x_root() - main_win.x(), app::event_y_root() - main_win.y(), 1.05);
-            } else {
-                container_rc_handle.zoom(app::event_x_root() - main_win.x(), app::event_y_root() - main_win.y(), 0.95);
-            }
+            match app::event_dy(){
+                app::MouseWheel::Up=>{
+                    container_rc_handle.zoom(app::event_x_root() - main_win.x(), app::event_y_root() - main_win.y(), 1.05);
+                }
+                app::MouseWheel::Down=>{
+                    container_rc_handle.zoom(app::event_x_root() - main_win.x(), app::event_y_root() - main_win.y(), 0.95);
+                }
+                _=>()
+            };
             win_cl.redraw();
             false
         }
+        //nudge view position with arrow keys
         Event::KeyUp=>{
             match app::event_key(){
                 fltk::enums::Key::Right =>{
@@ -307,18 +317,20 @@ fn main() {
             }
             true
         }
+        //pan our view
         Event::Drag=>{
-            dbg!(app::event_x(), app::event_y());
             container_rc_handle.pan_screen(app::event_x(), app::event_y());
             win_cl.redraw();
             true
         }
         _ => false,
-    }));
+    }});
 
-    let container_rc = container.clone();
-    win.draw(Box::new(move||{
-        renderer.draw_frame(|graphics| {
+    win.draw(
+        {
+            let container_rc = container.clone();
+            move|_|{
+            renderer.draw_frame(|graphics| {
             let font_size = 15.0;
             let scene = container_rc.0.borrow();
             graphics.clear_screen(Color::WHITE);
@@ -335,8 +347,7 @@ fn main() {
             graphics.draw_text((360.0, wind_size as f32 - font_size), Color::BLACK, &offset_text);
         });
 
-    }));
-
+    }});
     app.run().unwrap();
 }
 

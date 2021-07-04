@@ -431,9 +431,9 @@ checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
 
 [[package]]
 name = "fltk"
-version = "0.16.4"
+version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "883b9420ac7a803357a762ce532394a2f76f6fa6eef5b22209b614bf301c42b1"
+checksum = "8f77af0696d0f7f3b2cd18895a3e54c077f230d28aede0b6c67335e6a25abced"
 dependencies = [
  "bitflags",
  "fltk-derive",
@@ -446,9 +446,9 @@ dependencies = [
 
 [[package]]
 name = "fltk-derive"
-version = "0.16.4"
+version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "428b021d5c90f23fbd5ad6e95a5bdefda12ce9ff9ba10d9a9c18104dadfbd156"
+checksum = "c4dd3db11d41e944817e86d69aef34839d9a8fff5c12bf51184381c0799d43e7"
 dependencies = [
  "quote",
  "syn",
@@ -456,9 +456,9 @@ dependencies = [
 
 [[package]]
 name = "fltk-sys"
-version = "0.16.4"
+version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aefc17808df8f75a533c6d4f34ae39cfc09b33d76a95cd1e82052fce17b8bd27"
+checksum = "07412a8e60102a03ba690d31f60e403cfeaafe66079437ee57e16bcae96a997b"
 dependencies = [
  "cmake",
  "libc",
@@ -737,9 +737,9 @@ checksum = "830d08ce1d1d941e6b30645f1a0eb5643013d835ce3779a5fc208261dbe10f55"
 
 [[package]]
 name = "libc"
-version = "0.2.92"
+version = "0.2.97"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56d855069fafbb9b344c0f962150cd2c1187975cb1c22c1522c240d8c4986714"
+checksum = "12b8adadd720df158f4d70dfe7ccc6adb0472d7c55ca83445f6a5ab3e36f8fb6"
 
 [[package]]
 name = "libloading"
@@ -1315,7 +1315,7 @@ dependencies = [
 
 [[package]]
 name = "speedy2d_scroll_zoom_canvas"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "dyn-clone",
  "fltk",
@@ -1332,9 +1332,9 @@ checksum = "6446ced80d6c486436db5c078dde11a9f73d42b57fb273121e160b84f63d894c"
 
 [[package]]
 name = "syn"
-version = "1.0.68"
+version = "1.0.73"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ce15dd3ed8aa2f8eeac4716d6ef5ab58b6b9256db41d7e1a0224c2788e8fd87"
+checksum = "f71489ff30030d2ae598524f61326b902466f72a0fb1a8564c001cc63425bcc7"
 dependencies = [
  "proc-macro2",
  "quote",
