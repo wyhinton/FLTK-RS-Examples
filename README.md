@@ -13,7 +13,8 @@ A small collection of modular UI features made with the [fltk-rs](https://github
     - [Fuzzy Search Table](#fuzzy-search-table)
     - [Image Selection](#image-selection)
     - [Speedy2d Pan/Zoom Canvas](#speedy2d-panzoom-canvas)
-  - [Style Demos](#style-demos)
+  - [Misc Demos](#misc-demos)
+    - [Nested Drag targets](#nested-drag-targets)
     - [Background Fill for Group](#background-fill-for-group)
   - [Event Handling](#event-handling)
     - [Crossbeam Channels](#crossbeam-channels)
@@ -41,21 +42,30 @@ Use [comp_state](https://github.com/rebo/comp_state) to mutate and reference loc
 ### Fuzzy Search Table
 
 Fuzzy search a table of random strings, powered by [Sublime Fuzzy](https://crates.io/crates/sublime_fuzzy).
+
 ![Fuzzy Search](./.github/images/fuzzy_search.png)
 
 ### Image Selection
 
 Select a portion of an image from one frame and draw it in another frame.
-![Fuzzy Search](./.github/images/image_select.png)
+
+![Image Select](./.github/images/image_select.png)
 
 ### Speedy2d Pan/Zoom Canvas
 
 A hardware accelerated pan/zoom canvas using [Speedy2d](https://github.com/QuantumBadger/Speedy2D) as the render engine.
+
 ![Speedy2d Canvas](./.github/images/speedy2d_canvas.gif)
 
 <!-- ![Speedy2d Canvas](./images/Speedy_2d_Pan_Zoom_Canvas.png) -->
 
-## Style Demos
+## Misc Demos
+
+### Nested Drag targets
+
+Simple demonstration of using `app::belowmouse()` to differentiate between nested widgets with Dnd Events
+
+![Nested Drag Targets](./.github/images/nested_drag_targets.gif)
 
 ### Background Fill for Group
 
