@@ -57,8 +57,6 @@ A hardware accelerated pan/zoom canvas using [Speedy2d](https://github.com/Quant
 
 ![Speedy2d Canvas](./.github/images/speedy2d_canvas.gif)
 
-<!-- ![Speedy2d Canvas](./images/Speedy_2d_Pan_Zoom_Canvas.png) -->
-
 ## Misc Demos
 
 ### Nested Drag targets
@@ -79,7 +77,7 @@ Demonstrates creating a group that has a solid background color over which child
 
 Simple app demonstrating demonstrating handling channeled events (which have the advantage of carrying data) as well as custom events, all the while keeping fn main() clean.
 
-![crossbeam channels](./.github/images/crossbeam_channels.png)
+![Crossbeam Channels](./.github/images/crossbeam_channels.PNG)
 
 ### Ordinal Custom Events
 
