@@ -55,7 +55,7 @@ Select a portion of an image from one frame and draw it in another frame.
 
 A hardware accelerated pan/zoom canvas using [Speedy2d](https://github.com/QuantumBadger/Speedy2D) as the render engine.
 
-![Speedy2d Canvas](./.github/images/speedy2d_canvas.gif)
+![Speedy2d Canvas](./.github/images/speedy2d_canvas_new.gif)
 
 ## Misc Demos
 
