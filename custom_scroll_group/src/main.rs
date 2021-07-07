@@ -1,11 +1,6 @@
-use fltk::prelude::*;
-use fltk::*;
-use fltk::{app::*, button::*, enums::*, group::*, window::*};
+use fltk::{app, prelude::*, app::*, button::*, enums::*, group::*, window::*};
 pub mod scroll_group;
-use fltk::{prelude::GroupExt, prelude::WidgetExt};
-use scroll_group::ScrollGroup;
-use scroll_group::ScrollGroupEvent;
-use scroll_group::CustomScrollEvent;
+use scroll_group::{ScrollGroup, CustomScrollEvent};
 pub mod scroll_bar;
 use scroll_bar::ScrollBar;
 pub mod events;
@@ -14,16 +9,10 @@ pub mod counter;
 use counter::Counter;
 use custom_emmiter::CustomEmmiter;
 pub mod arc_widget;
-use arc_widget::ArcWidget;
-use arc_widget::ArcGroup;
-use std::{sync::{Arc, Mutex}};
+use arc_widget::{ArcWidget, ArcGroup};
+use std::{sync::{Mutex}};
 use event_emitter_rs::EventEmitter;
 use serde::{Serialize, Deserialize};
-pub mod button;
-use button::MyButton;
-// use comp_state::{topo, use_state};
-
-// pub mod scroll
 
 #[derive(Serialize, Deserialize, Debug, Copy, Clone)]
 struct WidgDimensions{
@@ -59,9 +48,10 @@ impl GlobalEvent{
 }
 
 
+
+
 #[derive(Debug, Clone)]
 pub enum Message {
-    Test,
     AddButton,
     RemoveButton,
 }
@@ -70,8 +60,7 @@ fn main() {
     let sg_width = 300;
 
     let app = App::default();
-    let (s, r) = channel::<Message>();
-    let mut win = Window::new(200, 200, 1000, 1000, "Template");
+    let mut win = Window::new(200, 200, 1000, 1000, "Custom Scroll Group");
     win.make_resizable(true);
     let mut button_container = Pack::new(350, 150, sg_width, 50, None);
 
@@ -88,7 +77,7 @@ fn main() {
     button_container.set_type(PackType::Horizontal);
 
     //FIRST SCROLL GROUP
-    let mut test_pack = Pack::new(100, 500, sg_width, 1000, "");
+    let mut test_pack = Pack::new(100, 500, sg_width, 0, "");
     test_pack.end();
 
     for x in 0..20 {
@@ -98,9 +87,8 @@ fn main() {
         but.set_color(Color::Red);
         test_pack.add(&but);
     }
-    dbg!(test_pack.children());
     test_pack.redraw();
-    // dbg!(test_pack.height());
+
     let mut sg = ScrollGroup::new(
         (win.width() - sg_width-400) / 2,
         300,
@@ -130,47 +118,14 @@ fn main() {
         500,
         test_pack_2.clone(),
     );
-    // sg_2.pack.add(&test_pack_2);
     test_pack_2.init_sizes();
-    // sg_2.add_widget(&mut test_pack_2, test_pack_2.height());
     sg_2.add_widget(&mut test_pack_2);
 
     win.end();
     win.show();
 
-    let val = sg.clone();
-    win.handle(move |widg, ev| {
-        if ev == ButtonEvent::ADD_BUTTON_PUSH.into() {
-            dbg!("got add"); 
-            // val.add_widget();
-            true
-        } else if ev == ButtonEvent::SUBTRACT_BUTTON_PUSH.into() {
-            dbg!("got subtract");
-            true
-        } else {
-            false
-        }
-    });
-
     app::add_timeout(1.0, move||{
         app::redraw();
     });
-
-    while app.wait() {
-        if let Some(msg) = r.recv() {
-            use Message::*;
-            match msg {
-                Test => {
-                    println!("{}", "got test message");
-                    app::redraw();
-                }
-                AddButton => {
-                    dbg!("going to add button");
-                }
-                RemoveButton => {
-                    dbg!("going to remove button");
-                }
-            }
-        }
-    }
+    app.run().unwrap();
 }

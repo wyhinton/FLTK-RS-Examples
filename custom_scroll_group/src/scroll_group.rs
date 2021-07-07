@@ -1,17 +1,12 @@
-use crate::{events::ScrollBarEvent, WidgDimensions, ScrollBar, CustomEmmiter};
+use crate::{ WidgDimensions, ScrollBar, CustomEmmiter};
 use fltk::{
-    app, app::MouseWheel, button::*, draw::*, enums::Color, enums::Damage, enums::Event,
+    app, app::MouseWheel, button::*, enums::Color, enums::Damage, enums::Event,
     enums::FrameType, frame::*, group::*, prelude::*, widget::*,
 };
-use std::cell::RefCell;
-use std::{rc::Rc};
-use std::{sync::{Arc, Mutex}};
 
-use crate::{scroll_bar::scroll_runner::CustomRunnerEvent, GLOBAL_EVENT_EMMITER, ButtonEvent, GlobalEvent, ArcGroup};
-// use scroll_bar::CustomRunnerEvent; 
+use crate::{scroll_bar::scroll_runner::CustomRunnerEvent, GLOBAL_EVENT_EMMITER, GlobalEvent, ArcGroup};
+
 pub struct ScrollGroupEvent;
-
-
 
 impl ScrollGroupEvent {
     pub const WIDGET_ADDED: i32 = 43; // values below 30 are reserved
@@ -49,12 +44,10 @@ impl ScrollGroup {
         let master_container_arc = ArcGroup::<Group>::new(master_container.clone());
 
         inner_group.draw(move|widg|{
-            let x = widg.parent().unwrap().x();
-            let y = widg.parent().unwrap().y();
             let width = widg.parent().unwrap().width();
-            let height = widg.parent().unwrap().height();
             widg.resize(widg.x(), widg.y(), width-25, widg.height());
         });
+        
         //create arc for scroll contents
         let arc_pack = ArcGroup::<Pack>::new(inner_group.clone());
 
@@ -70,9 +63,6 @@ impl ScrollGroup {
             h,
             emmiter.clone());
 
-        let sb_val = sb.runner.arc_val;
-        let sb_val_cl = sb_val.clone();
-
         //master
         let master_container_arc_cl = master_container_arc.clone();
 
@@ -80,7 +70,6 @@ impl ScrollGroup {
         let arc_pack_cl_3 = arc_pack.clone(); 
 
         //move inner contents in accordance with updates to runner's value
-        let igg = inner_group.clone();
         emmiter.on(CustomRunnerEvent::UPDATE_SCROLL_GROUP, move|value:  f32|{
             // dbg!("gout update");
             let end_of_container_pos = master_container_arc_cl.y()+master_container_arc_cl.height();
@@ -94,7 +83,6 @@ impl ScrollGroup {
             arc_pack_cl_3.widg().set_pos(arc_pack_cl_3.x(), new_val as i32);
             
             arc_pack_cl_3.widg().redraw();
-            let tt = arc_pack_cl_3.clone();
         });
               
         //handle add button event
@@ -151,21 +139,23 @@ impl ScrollGroup {
                             dbg!("got reszie");
                             widg.set_damage(false);
                             emmiter_cl.emit(CustomScrollEvent::CONTAINER_RESIZE, (widg.width(), widg.height()));
-                            // dbg!(widg.parent().unwrap().parent().unwrap().width());
                             true
                         }
                         Event::MouseWheel => {
                             let dy = app::event_dy();
-                            match dy {
-                                MouseWheel::Up => {
-                                    emmiter_cl.emit(CustomRunnerEvent::INCREMENT_RUNNER_POS, 10);
-                                    widg.set_damage_type(Damage::Scroll);
+                            //TODO: SHOULDN'T NEED TO USE THIS IS INSIDE CHECK
+                            if app::event_inside(widg.x(), widg.y(), widg.width(), widg.height()){
+                                match dy {
+                                    MouseWheel::Up => {
+                                        emmiter_cl.emit(CustomRunnerEvent::INCREMENT_RUNNER_POS, 10);
+                                        widg.set_damage_type(Damage::Scroll);
+                                    }
+                                    MouseWheel::Down => {
+                                        emmiter_cl.emit(CustomRunnerEvent::INCREMENT_RUNNER_POS, -10);
+                                        widg.set_damage_type(Damage::Scroll);
+                                    }
+                                    _ => (),
                                 }
-                                MouseWheel::Down => {
-                                    emmiter_cl.emit(CustomRunnerEvent::INCREMENT_RUNNER_POS, -10);
-                                    widg.set_damage_type(Damage::Scroll);
-                                }
-                                _ => (),
                             }
                             true
                         }
@@ -184,35 +174,17 @@ impl ScrollGroup {
         sg
     }
     pub fn add_widget(&mut self, to_add: &mut impl GroupExt) {
-    // pub fn add_widget(&mut self, to_add: &mut impl GroupExt, height: i32) {
-        // dbg!(to_add.children());
         to_add.init_sizes();
-        dbg!(to_add.height());
-        dbg!(to_add.children());
         let new_height = 0;
         let mut new_width = to_add.width();
         for x in 0..to_add.children() {
-            // dbg!(to_add.child(x).unwrap().height());
             new_width += to_add.child(x).unwrap().height();
-            // dbg!(to_add.width());
-
         }
-        // dbg!(height);
-
         self.pack.add(to_add);
         self.pack.redraw();
-        // to_add.redraw();
-        dbg!(to_add.height());
-        let height = to_add.height();
-        // let new_height = self.pack.height() as f32/to_add.height() as f32;
-        // self.emmiter.emit(CustomScrollEvent::CHILD_RESIZE, new_height);
         self.emmiter.emit(CustomScrollEvent::CHILD_RESIZE, WidgDimensions::new(new_height, new_width));
-        // let _ = app::handle_main(ScrollGroupEvent::WIDGET_ADDED);
     }
-    pub fn remove_widget(&mut self, to_remove: &impl WidgetExt) {
-        // self.grp.remove(wid);
-        // app::handle_main(MyEvent::REMOVE_WIDGET);
-    }
+
 }
 
 impl std::ops::Deref for ScrollGroup {
@@ -226,17 +198,5 @@ impl std::ops::Deref for ScrollGroup {
 impl std::ops::DerefMut for ScrollGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         &mut self.pack
-    }
-}
-
-struct Label {
-    pub frame: Frame,
-}
-impl Label {
-    pub fn new(x: i32, y: i32, w: i32, h: i32, label: &str) -> Self {
-        let mut frame = Frame::new(x, y, w, 25, "Title");
-        frame.set_frame(FrameType::FlatBox);
-        frame.set_color(Color::Green);
-        return Label { frame: frame };
     }
 }

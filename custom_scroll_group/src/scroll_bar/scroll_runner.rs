@@ -23,7 +23,6 @@ impl Runner {
         let mut frame = Frame::new(x, y, w, h, None);
         frame.set_color(Color::Magenta);
         frame.set_frame(FrameType::FlatBox);
-        // frame.make_resizable(false);
         let arc_frame = ArcWidget::<Frame>::new(frame.clone());
 
         //ARCARCARCARCARCARCARCARC
@@ -45,17 +44,12 @@ impl Runner {
             } else {
                 arc_frame_cl.set_color(Color::Dark3)
             }
-            dbg!(relative);
             let new_runner_height = relative*arc_frame_cl.parent().unwrap().height() as f32;
-            dbg!(arc_frame_cl.height()-new_runner_height as i32);
             let height_difference = arc_frame_cl.height()-new_runner_height as i32;
             let new_y_pos = arc_frame_cl.y()-height_difference;
-            dbg!(new_y_pos);
             arc_size_cl.set(new_runner_height as i32);
             emmiter_cl_4.emit(CustomRunnerEvent::SET_RUNNER_POS, (arc_frame_cl.x(), new_y_pos));
             arc_frame_cl.set_height(new_runner_height as i32);
-            // arc_frame_cl.redraw();
-            // arc_frame_cl.parent().unwrap().redraw();
         });
 
         let emmiter_cl = emmiter.clone();
@@ -64,16 +58,12 @@ impl Runner {
         let arc_frame_cl_2 = arc_frame.clone();
         let arc_size_cl_2 = arc_size.clone();
         emmiter.on(CustomRunnerEvent::SET_RUNNER_POS, move|value: (i32, i32)|{
-            dbg!("got set runner pos");
             let p_y = arc_frame_cl_2.parent().unwrap().y();
             let p_h = arc_frame_cl_2.parent().unwrap().height()-arc_size_cl_2.get();
-            // arc_frame_cl_2.set_pos(arc_frame_cl_2.x(), value.1.clamp(p_y,p_y+p_h));
-            dbg!(p_y, p_h, arc_size_cl_2.get());
             arc_frame_cl_2.set_pos(arc_frame_cl_2.x(), value.1.clamp(p_y,p_y+p_h));
             arc_frame_cl_2.parent().unwrap().set_damage_type(Damage::User1);
             arc_frame_cl_2.parent().unwrap().parent().unwrap().set_damage_type(Damage::User1);
             arc_frame_cl_2.set_damage_type(Damage::User1);
-            dbg!(value);
             let tva = value.1 - p_y;
             let new_val = ((tva as f32/(p_h) as f32)).clamp(0.0,1.0);
             arc_val_cl_2.set(new_val);
