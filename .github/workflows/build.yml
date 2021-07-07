@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build, test, clippy all
-        run: sh -x .github\workflows\scripts\ci.sh
+        run: "${{ format('{0}/.github/scripts/ci.sh', github.workspace) }}"
