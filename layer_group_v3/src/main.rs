@@ -196,57 +196,197 @@ fn main() {
                     // cdbg!(manager_cl.borrow());
                     // let test = NEW_DROPPABLES.lock().unwrap().
 
-                    dbg!(NEW_DROPPABLES.lock().unwrap());
-                    let dbg_string = format!("Droppables: {:?}", NEW_DROPPABLES.lock().unwrap());
+                    // dbg!(NEW_DROPPABLES.lock().unwrap());
+                    // let dbg_string = format!("Droppables: {:?}", NEW_DROPPABLES.lock().unwrap());
                     // let test = dbg_string.split(",").flat_map(|f| format!("{}_GREAT", f)).collect();
-                    droppables_display_frame.set_label(&dbg_string);
-                    droppables_display_frame.redraw();
+                    // droppables_display_frame.set_label(&dbg_string);
+                    // droppables_display_frame.redraw();
                     match (manager_cl.borrow().source.clone(), manager_cl.borrow().target.clone()){
                         (Some(source), Some(target))=>{
                             match ((source.draggable_type, target.draggable_type)){
                                 ((DraggableType::Layer, DraggableType::Layer))=>{
-                                    let source_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&source.draggable_id).unwrap().clone();
-                                    let target_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&target.draggable_id).unwrap().clone();
-                                    let source_layer_conversion: Result<LayerDraggable, _> = source_layer_ref.try_lock().unwrap().try_into();
-                                    let target_layer_conversion: Result<LayerDraggable, _> = target_layer_ref.try_lock().unwrap().try_into();
-                                    match ((source_layer_conversion, target_layer_conversion)){
-                                        ((Ok(source_layer_cl), Ok(target_layer_cl)))=>{
-                                            match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target_layer_cl.layer_parent_id()){
-                                                Some((TestDroppable::LayerContainer(source_layer_container), TestDroppable::LayerContainer(target_layer_container)))=>{
-                                                    dbg!(source_layer_container.droppable_id());
-                                                    dbg!(target_layer_container.droppable_id());
-                                                    dbg!(source_layer_cl.draggable_id());
-                                                    let target_pos = target_layer_container.find_pos(target_layer_cl.draggable_id());
-                                                    dbg!(target_pos);
-                                                    let to_swap = source_layer_container.remove_child(source_layer_cl.draggable_id()).unwrap();
-                                                    target_layer_container.insert_layer(to_swap.1, target_pos);
-                                                }
-                                                _=>()
-                                            }
-                                        }
-                                        _=>()
-                                    }
+                                    // let map = NEW_DROPPABLES.lock().unwrap();
+                                    // let map2 = NEW_DROPPABLES.lock().unwrap();
+                                    
+                                    // let source_layer_ref =  *map.get(&source.draggable_id).unwrap();
+                                    // let map = NEW_DROPPABLES.into_inner().unwrap();
+                                    // match &*NEW_DROPPABLES.lock().unwrap(){
+                                    //     nmap=>{
+                                    //         let source_layer_ref =  nmap.clone().get(&source.draggable_id).unwrap();
+                                    //         let test = source_layer_ref.lock().unwrap().droppable_id();
+                                    //         // nmap.get("")
+                                    //         // let target_layer_ref =  nmap.clone().get(&target.draggable_id).unwrap().into_inner().unwrap().clone();
+                                    //         // let real = 
+                                    //         // let rr = source_layer_ref.into_inner();
+                                    //     }
+                                    //     _=>()
+                                    // }
+                                    let (source_parent_id, target_parent_id)  = match (NEW_DROPPABLES.lock().unwrap().get(&source.draggable_id).unwrap(), NEW_DROPPABLES.lock().unwrap().get(&source.draggable_id).unwrap()){
+                                        (z,q)=>{
+                                            // let source_layer_conversion: Result<LayerDraggable, _> = Mutex::into_inner(&*z.lock().unwrap()).unwrap().try_into();
+                                            let r = &*z.lock().unwrap();
+                                            let p:Result<LayerDraggable, _> = r.clone().try_into();
+                                            let q = &*z.lock().unwrap();
+                                            let z:Result<LayerDraggable, _> = r.clone().try_into();
+                                            let test =  match (p,z){
+                                                (Ok(m), Ok(n))=>(m.parent_id(), n.parent_id()),
+                                                _=>(String::from("NA"), String::from("NA"))
+                                            };
+                                            test
+                                            // return test.clone()                          
+                                            // match ()
+                                        },
+                                        _=>((String::from("NA"), String::from("NA")))
+                                    };
+                                    let keys = [source.draggable_id.clone(),target.draggable_id.clone(), source_parent_id, target_parent_id];
+                                    let mut wrapper = NEW_DROPPABLES.lock().unwrap().iter_multi_mut(&keys, &mut buffer);
+                                    let test = wrapper.next();
+                                    // wrapper.
+                                    // match (NEW_DROPPABLES.lock().unwrap().get(&source_parent_id).unwrap(), NEW_DROPPABLES.lock().unwrap().get(&target_parent_id).unwrap()){
+                                    //     (z,q)=>{
+                                            
+                                    //     }
+                                    //     _=>()
+                                    // }
+
+
+                                    // let source_layer_ref =  map.get(&source.draggable_id).unwrap().clone();
+                                    // let target_layer_ref =  map.get(&target.draggable_id).unwrap().clone();
+                                    // let source_layer_conversion: Result<LayerDraggable, _> = Mutex::into_inner(source_layer_ref).unwrap().try_into();
+                                    // let target_layer_conversion: Result<LayerDraggable, _> = Mutex::into_inner(target_layer_ref).unwrap().try_into();
+                                    // match ((source_layer_ref, target_layer_ref)){
+                                    //     ((s, t))=>{
+                                    //         let zz: Result<LayerDraggable, _> = Mutex::into_inner(*target_layer_ref).unwrap().try_into();
+                                    //     }
+                                    //     _=>()
+                                    //         // ((Ok(source_layer_cl), Ok(target_layer_cl)))=>{
+                                    //         //     match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target_layer_cl.layer_parent_id()){
+                                    //         //         Some((source_layer_container_mutex, target_layer_container_mutex))=>{
+                                    //         //             match ((&mut *source_layer_container_mutex.lock().unwrap(), &mut *target_layer_container_mutex.lock().unwrap())){
+                                    //         //                 (TestDroppable::LayerContainer(source_container), TestDroppable::LayerContainer(target_container))=>{
+                                    //         //                     dbg!(source_container.droppable_id());
+                                    //         //                     dbg!(target_container.droppable_id());
+                                    //         //                     // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //         //                     // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //         //                     // dbg!(source_container.try_lock().unwrap().draggable_id());
+                                    //         //                     // let target_pos = target_container.try_lock().unwrap().find_pos(target_layer_cl.draggable_id());
+                                    //         //                     // dbg!(target_pos);
+                                    //         //                     // let to_swap = source_container.try_lock().unwrap().remove_child(source_layer_cl.draggable_id()).unwrap();
+                                    //         //                     // target_container.try_lock().unwrap().insert_layer(to_swap.1, target_pos);
+                                    //         //                 }
+                                    //         //                 _=>()
+                                    //         //             }
+                                
+                                    //         //         }
+                                    //         //         _=>()
+                                    //         //     }
+                                    //         // }
+                                    //         // _=>()
+                                    //     }
+                                    // match ((*source_layer_ref.unwrap(), *target_layer_ref.unwrap())){
+                                    // // match ((*source_layer_ref.unwrap(), *target_layer_ref.unwrap())){
+                                    //     (r1, r2)=>{
+                                    //         match((Mutex::into_inner(r1).unwrap().try_into(), Mutex::into_inner(r2).unwrap())){
+                                    //             (sd1, td1)=>{
+                                    //                 // match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&sd1.layer_parent_id(), &td1.layer_parent_id()){
+                                    //                 //     Some((source_layer_container_mutex, target_layer_container_mutex))=>{
+                                    //                 //         match ((&mut *source_layer_container_mutex.lock().unwrap(), &mut *target_layer_container_mutex.lock().unwrap())){
+                                    //                 //             (TestDroppable::LayerContainer(source_container), TestDroppable::LayerContainer(target_container))=>{
+                                    //                 //                 dbg!(source_container.droppable_id());
+                                    //                 //                 dbg!(target_container.droppable_id());
+                                    //                 //                 // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //                 //                 // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //                 //                 // dbg!(source_container.try_lock().unwrap().draggable_id());
+                                    //                 //                 // let target_pos = target_container.try_lock().unwrap().find_pos(target_layer_cl.draggable_id());
+                                    //                 //                 // dbg!(target_pos);
+                                    //                 //                 // let to_swap = source_container.try_lock().unwrap().remove_child(source_layer_cl.draggable_id()).unwrap();
+                                    //                 //                 // target_container.try_lock().unwrap().insert_layer(to_swap.1, target_pos);
+                                    //                 //             }
+                                    //                 //             _=>()
+                                    //                 //         }
+                                   
+                                    //                 //     }
+                                    //                 //     _=>()
+                                    //                 // }
+                                    //             }
+                                                
+                                    //             // match ((source_layer_conversion, target_layer_conversion)){
+                                    //             //     ((Ok(source_layer_cl), Ok(target_layer_cl)))=>{
+                                    //             //         match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target_layer_cl.layer_parent_id()){
+                                    //             //             Some((source_layer_container_mutex, target_layer_container_mutex))=>{
+                                    //             //                 match ((&mut *source_layer_container_mutex.lock().unwrap(), &mut *target_layer_container_mutex.lock().unwrap())){
+                                    //             //                     (TestDroppable::LayerContainer(source_container), TestDroppable::LayerContainer(target_container))=>{
+                                    //             //                         dbg!(source_container.droppable_id());
+                                    //             //                         dbg!(target_container.droppable_id());
+                                    //             //                         // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //             //                         // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //             //                         // dbg!(source_container.try_lock().unwrap().draggable_id());
+                                    //             //                         // let target_pos = target_container.try_lock().unwrap().find_pos(target_layer_cl.draggable_id());
+                                    //             //                         // dbg!(target_pos);
+                                    //             //                         // let to_swap = source_container.try_lock().unwrap().remove_child(source_layer_cl.draggable_id()).unwrap();
+                                    //             //                         // target_container.try_lock().unwrap().insert_layer(to_swap.1, target_pos);
+                                    //             //                     }
+                                    //             //                     _=>()
+                                    //             //                 }
+                                       
+                                    //             //             }
+                                    //             //             _=>()
+                                    //             //         }
+                                    //             //     }
+                                    //             //     _=>()
+                                    //             // }
+                                    //         }
+          
+                                    //     }
+                                    //     _=>()
+                                    // }
+                                    // match ((source_layer_conversion, target_layer_conversion)){
+                                    //     ((Ok(source_layer_cl), Ok(target_layer_cl)))=>{
+                                    //         match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target_layer_cl.layer_parent_id()){
+                                    //             Some((source_layer_container_mutex, target_layer_container_mutex))=>{
+                                    //                 match ((&mut *source_layer_container_mutex.lock().unwrap(), &mut *target_layer_container_mutex.lock().unwrap())){
+                                    //                     (TestDroppable::LayerContainer(source_container), TestDroppable::LayerContainer(target_container))=>{
+                                    //                         dbg!(source_container.droppable_id());
+                                    //                         dbg!(target_container.droppable_id());
+                                    //                         // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //                         // dbg!(source_container.try_lock().unwrap().droppable_id());
+                                    //                         // dbg!(source_container.try_lock().unwrap().draggable_id());
+                                    //                         // let target_pos = target_container.try_lock().unwrap().find_pos(target_layer_cl.draggable_id());
+                                    //                         // dbg!(target_pos);
+                                    //                         // let to_swap = source_container.try_lock().unwrap().remove_child(source_layer_cl.draggable_id()).unwrap();
+                                    //                         // target_container.try_lock().unwrap().insert_layer(to_swap.1, target_pos);
+                                    //                     }
+                                    //                     _=>()
+                                    //                 }
+                           
+                                    //             }
+                                    //             _=>()
+                                    //         }
+                                    //     }
+                                    //     _=>()
+                                    // }
                                 }
-                                ((DraggableType::Layer, DraggableType::Container))=>{
-                                    let source_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&source.draggable_id).unwrap().clone();
-                                    // let target_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&target.draggable_id).unwrap().clone();
-                                    let source_layer_conversion: Result<LayerDraggable, _> = source_layer_ref.try_into();
-                                    // let target_layer_conversion: Result<LayerDraggable, _> = target_layer_ref.try_into();
-                                    match (source_layer_conversion){
-                                        Ok(source_layer_cl)=>{
-                                            match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target.draggable_id){
-                                                Some((TestDroppable::LayerContainer(source_layer_container), TestDroppable::LayerContainer(target_layer_container)))=>{
-                                                    dbg!(source_layer_container.droppable_id());
-                                                    dbg!(target_layer_container.droppable_id());
-                                                    let to_swap = source_layer_container.remove_child(source_layer_cl.draggable_id()).unwrap();
-                                                    target_layer_container.add_child(to_swap.1);
-                                                }
-                                                _=>()
-                                            }
-                                        }
-                                        _=>()
-                                    }
-                                }
+                                // ((DraggableType::Layer, DraggableType::Container))=>{
+                                //     let source_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&source.draggable_id).unwrap().clone();
+                                //     // let target_layer_ref =  NEW_DROPPABLES.lock().unwrap().get(&target.draggable_id).unwrap().clone();
+                                //     // let source_layer_conversion: Result<LayerDraggable, _> = source_layer_ref.try_into();
+                                //     let source_layer_conversion: Result<LayerDraggable, _> = Mutex::into_inner(*source_layer_ref).unwrap().try_into();
+                                //     // let target_layer_conversion: Result<LayerDraggable, _> = target_layer_ref.try_into();
+                                //     match (source_layer_conversion){
+                                //         Ok(source_layer_cl)=>{
+                                //             match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source_layer_cl.layer_parent_id(), &target.draggable_id){
+                                //                 Some((TestDroppable::LayerContainer(source_layer_container), TestDroppable::LayerContainer(target_layer_container)))=>{
+                                //                     dbg!(source_layer_container.droppable_id());
+                                //                     dbg!(target_layer_container.droppable_id());
+                                //                     let to_swap = source_layer_container.remove_child(source_layer_cl.draggable_id()).unwrap();
+                                //                     target_layer_container.add_child(to_swap.1);
+                                //                 }
+                                //                 _=>()
+                                //             }
+                                //         }
+                                //         _=>()
+                                //     }
+                                // }
                                 // (DraggableType::Layer, DraggableType::Container)=>{
                                 //     match NEW_DROPPABLES.lock().unwrap().get_pair_mut(&source.draggable_id, &target.draggable_id){
                                 //         Some((TestDroppable::Layer(source_layer), TestDroppable::LayerContainer(target_layer_container)))=>{

@@ -4,7 +4,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 use std::collections::HashMap;
 use colored::Colorize;
-
+use std::sync::Mutex;
 
 #[derive(Clone)]
 pub struct LayerContainer{
@@ -43,12 +43,12 @@ impl LayerContainer{
         self.container.insert(&to_insert_widg, pos);
         // NEW_DROPPABLES.try_lock().unwrap().insert(layer.droppable_id(), TestDroppable::from(layer));
         self.test_children.insert(layer.droppable_id(), layer.clone());
-        match layer{
-            LayerItem::Layer(l)=>{
-                NEW_DROPPABLES.try_lock().unwrap().insert(l.droppable_id().clone(), TestDroppable::from(l));
-            }
-            _=>()
-        }
+        // match layer{
+        //     LayerItem::Layer(l)=>{
+        //         NEW_DROPPABLES.try_lock().unwrap().insert(l.droppable_id().clone(), TestDroppable::from(l));
+        //     }
+        //     _=>()
+        // }
         self.container.parent().unwrap().redraw();
         
     }   
