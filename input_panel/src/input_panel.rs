@@ -60,7 +60,6 @@ impl<'a> InputPanel<'a> {
         );
         self.inputs.push(input_wrapper);
     }
-    // pub fn get_values(&self){
     pub fn get_values(&self) -> HashMap<String, CustomInputValue> {
         dbg!("getting all values for input");
         let mut my_vals = vec![];

@@ -8,7 +8,6 @@ use std::fmt;
 pub type FltkInput = Box<dyn fltk::prelude::ValuatorExt + Send + Sync>;
 pub type CustomInput = Box<dyn CustomInputExt + Send + Sync>;
 type Result<T, E = Error> = std::result::Result<T, E>;
-
 pub mod input_wrapper;
 use input_wrapper::InputWrapper;
 pub mod float_input;
@@ -53,14 +52,13 @@ pub trait CustomInputExt: DynClone + fmt::Debug {
 dyn_clone::clone_trait_object!(CustomInputExt);
 #[derive(fmt::Debug, Clone, Copy)]
 pub enum Message {
-    Test,
     GetInputValues,
 }
 
 fn main() {
     let app = App::default();
     let (s, r) = channel::<Message>();
-    let mut win = Window::new(200, 200, 1000, 1000, "Template");
+    let mut win = Window::new(200, 200, 1000, 1000, "Input Panel");
     win.make_resizable(true);
 
     let panel_width = 300;
@@ -107,18 +105,12 @@ fn main() {
     win.end();
     win.show();
 
-    // app::set_callback(widget, cb)
-    // app
     app::add_timeout(1.0, move || app::redraw());
 
     while app.wait() {
         if let Some(msg) = r.recv() {
             use Message::*;
             match msg {
-                Test => {
-                    println!("{}", "got test message");
-                    app::redraw();
-                }
                 GetInputValues => {
                     println!("{}", "got input vlaues");
                     let panel_vals = my_panel.get_values();

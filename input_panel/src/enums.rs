@@ -7,8 +7,6 @@ pub enum CustomInputValue {
     CiBool(bool),
     CiInt(i32),
     CiFloat(Distance),
-    // CiFloat(f64),
-    // CiFloat(f64),
 }
 #[derive(Debug, Clone, Eq, PartialEq)]
 pub enum InputType {
@@ -40,8 +38,4 @@ impl Default for FloatInputSettings {
             default: 50.0,
         }
     }
-}
-
-pub enum CustomColors {
-    // Dark4
 }

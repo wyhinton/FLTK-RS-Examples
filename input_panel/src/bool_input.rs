@@ -33,9 +33,7 @@ impl CustomInputExt for CBoolInput {
         self.input.redraw()
     }
 }
-// fn foo() -> Result<(), MyError> {
-//     WidgetNotFound { widget_name: "Quux" }.fail()
-// }
+
 impl fmt::Debug for CBoolInput {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{}", "hello i'm a bool input")
@@ -50,7 +48,6 @@ impl CBoolInput {
         let mut input = CheckButton::new(0, 0, 25, 25, "");
         input.set_color(Color::Dark3);
         input.set_frame(FrameType::FlatBox);
-        // pack.add(&spacer_frame);
         pack.add(&input);
 
         let mut fi = CBoolInput {
