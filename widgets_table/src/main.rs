@@ -66,7 +66,6 @@ impl MyTable {
                   for q in 0..col_count as i32{
                       let t_x = q*col_width;
                       let child_ind = (start+q);
-                      d
                       if child_ind < true_children{
                         // dbg!(child_ind);
                         let mut child = widg.child(child_ind).unwrap();
