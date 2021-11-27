@@ -1,3 +1,5 @@
+//requires building with nighlty
+
 use fltk::{app, app::*, frame::*, window::*, image::*, table::*, button::*, input::*, enums::*, group::*, prelude::*};
 use comp_state::{topo, use_state, use_state_current, StateAccess, CloneState};
 
