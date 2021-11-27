@@ -1,4 +1,4 @@
-  
+//example of using the event emmiter crate
 use fltk::{app, enums::FrameType, frame::Frame, prelude::*, window::Window, button::*, group::*, enums::*};
 use std::{sync::{Arc, Mutex}};
 use event_emitter_rs::EventEmitter;
