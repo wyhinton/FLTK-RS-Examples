@@ -1,7 +1,7 @@
 //requires building with nighlty
 
-use fltk::{app, app::*, frame::*, window::*, image::*, table::*, button::*, input::*, enums::*, group::*, prelude::*};
-use comp_state::{topo, use_state, use_state_current, StateAccess, CloneState};
+use fltk::{app, frame::*, window::*, button::*, enums::*, group::*, prelude::*};
+use comp_state::{topo, use_state, StateAccess, CloneState};
 
 #[derive(Clone)]
 pub struct Counter {
@@ -15,7 +15,7 @@ impl GlobalEvents{
 
 impl Counter {
     #[topo::nested]
-    pub fn new(val: i32, id: &'static str) -> Self {
+    pub fn new(val: i32) -> Self {
         //initialize counter state
         let count = use_state(|| val);
         let mut pack = Pack::new(0,0,100,150, None);
@@ -37,8 +37,7 @@ impl Counter {
         pack.end();
 
         let mut frame_cl = frame.clone();
-
-        but_inc.set_callback(move|widg|{
+        but_inc.set_callback(move|_|{
             count.update(move|c|{
                 *c +=1;
             });
@@ -50,7 +49,7 @@ impl Counter {
 
         
         let mut frame_cl_2 = frame.clone();
-        but_dec.set_callback(move|widg|{
+        but_dec.set_callback(move|_|{
             count.update(move|c|{
                 *c -=1;
             });
@@ -86,8 +85,8 @@ fn main() {
     container.set_spacing(20);
     container.set_type(PackType::Horizontal);
 
-    let c1 = Counter::new(0, "Counter 1");
-    let c2 = Counter::new(10, "Counter 2");
+    let c1 = Counter::new(0);
+    let c2 = Counter::new(10);
     dbg!(c1.value());
     dbg!(c2.value());
     container.end();    
