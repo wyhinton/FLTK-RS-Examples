@@ -8,7 +8,7 @@ description = "my application"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fltk = { version = "^1.0.18"}
+fltk = { version = "^1.2"}
 hey_listen = "0.5"
 lazy_static = "1.4.0"
 event-emitter-rs = "0.1.4"

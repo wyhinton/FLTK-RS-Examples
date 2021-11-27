@@ -1,46 +1,32 @@
   
 use fltk::{app, enums::FrameType, frame::Frame, prelude::*, window::Window, button::*, group::*, enums::*};
-use std::{rc::Rc, sync::{Arc, Mutex}};
+use std::{sync::{Arc, Mutex}};
 use event_emitter_rs::EventEmitter;
 use lazy_static::lazy_static;
-use std::cell::RefCell;
-// https://www.ralfj.de/projects/rust-101/part15.html
 
 //Globally accessible event
 lazy_static! {
-    // Export the emitter with `pub` keyword
     pub static ref GLOBAL_EVENT_EMMITER: Mutex<EventEmitter> = Mutex::new(EventEmitter::new());
 }
 
 struct GlobalEVents{
-  
 }
 
 impl GlobalEVents{
     const SET_GLOBAL_FRAME: &'static str = "SET_GLOBAL_FRAME";
 }
 struct MyButton{
-  button: Button, 
 }
 
 impl MyButton{
-    pub fn new(x: i32, y: i32, w: i32, h: i32, event: &'static str, emmitter: Arc<Mutex<EventEmitter>>, add_val: Option<i32>)->Self{
+    pub fn new(x: i32, y: i32, w: i32, h: i32, event: &'static str, emmitter: Arc<Mutex<EventEmitter>>, button_val: i32)->Self{
         let mut button= Button::new(x,y,w,h,None);
-        match add_val{
-            Some(val)=>{
-                button.set_label(&format!("{}_{}", event, val));
-                button.set_callback(move|widg|{
-                    emmitter.lock().unwrap().emit(event, val);
-                });
-            }
-            None=>{
-                button.set_label("custom value");
-            }
-        }
-        // button.set_label(&format!("{}_{}", event, add_val));
-
+        button.set_frame(FrameType::FlatBox);
+        button.set_label(&format!("+{}", button_val));
+        button.set_callback(move|_|{
+            emmitter.lock().unwrap().emit(event, button_val);
+        });
         MyButton{
-            button: button,
         }
     }
 }
@@ -64,15 +50,15 @@ pub fn get(&self) -> i32 {
 }
 }
 
-struct Adder{}
+struct CounterGroup{}
 
 struct AdderEvents{}
 impl AdderEvents{
     const ADD_VALUE: &'static str = "ADD_VALUE";
 }
-// struct MyFrame
-impl Adder{
-    pub fn new(x: i32, y: i32, w: i32, h: i32, msg: &'static str)->Self{
+
+impl CounterGroup{
+    pub fn new(x: i32, y: i32, w: i32, h: i32)->Self{
         //wrap our emmitter so we can clone and use it everywhere inside Adder
         let event_emitter = Arc::new(Mutex::new(EventEmitter::new()));
         //i32 value accesible from within Adder
@@ -90,29 +76,17 @@ impl Adder{
             dbg!(number);
         });
 
-        let container= Pack::new(x,y,w,h,"top");
-        let mut myb1 = MyButton::new(100,100,50,20, AdderEvents::ADD_VALUE, event_emitter.clone(), None);
-        let event_emmiter_cl = event_emitter.clone();
-        //create a unique callback for one instance of the MyButton struct
-        myb1.button.set_callback(move|_|{
-            let int_val = 100;
-            let string_val = "My Special Button".to_string();
-            println!("sending int: {}, sending string: {}", int_val, string_val);
-            event_emmiter_cl.lock().unwrap().emit(AdderEvents::ADD_VALUE, 100);
-            GLOBAL_EVENT_EMMITER.lock().unwrap().emit(GlobalEVents::SET_GLOBAL_FRAME, msg.to_string());
-        });
+        let container= Pack::new(x,y,w,h, None);
         //Other instances emit predfined events
-        let _myb2 = MyButton::new(100,100,50,20, AdderEvents::ADD_VALUE,  event_emitter.clone(), Some(10));
-        let _myb3 = MyButton::new(100,100,50,20, AdderEvents::ADD_VALUE,  event_emitter.clone(), Some(20));
+        let _myb2 = MyButton::new(100,100,50,20, AdderEvents::ADD_VALUE,  event_emitter.clone(), 10);
+        let _myb3 = MyButton::new(100,100,50,20, AdderEvents::ADD_VALUE,  event_emitter.clone(), 20);
         container.end();    
-        Adder{
-            
-        }
+        CounterGroup{}
     }
 }
 
 fn main() {
-    let app = app::App::default().with_scheme(app::Scheme::Gleam);
+    let app = app::App::default();
     let mut wind = Window::new(100, 100, 500, 500, "Hello from rust");
 
     //displays a string value which is mutated via a Global Event 
@@ -126,8 +100,8 @@ fn main() {
     });
     
     //Custom adder widget can listen to events internally and global,
-    let _parent = Adder::new(100,100,100,50, "String From Adder 1");
-    let _parent2 = Adder::new(100,200,100,50, "String From Adder 2");
+    let _parent = CounterGroup::new(100,100,100,50);
+    let _parent2 = CounterGroup::new(100,200,100,50);
 
     wind.make_resizable(true);
     wind.end();
