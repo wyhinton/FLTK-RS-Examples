@@ -1,5 +1,6 @@
 # FLTK-RS Examples
-
+![fltk-rs version](https://img.shields.io/badge/fltk--rs-%5E1.2-green)
+![]
 A small collection of modular UI features made with the [fltk-rs](https://github.com/MoAlyousef/fltk-rs) library.
 
 # Table of Contents
