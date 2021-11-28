@@ -1,8 +1,8 @@
 build_test_clippy(){
   while read path; do
     printf "Project: %s\n" "$path"
-    cargo build --verbose --manifest-path "$path"
-    cargo test --verbose --manifest-path "$path"
+    cargo build +nightly --verbose --manifest-path "$path"
+    cargo test +nightly --verbose --manifest-path "$path"
     cargo clippy --verbose --manifest-path "$path"
   done
 }

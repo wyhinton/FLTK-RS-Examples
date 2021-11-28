@@ -36,7 +36,6 @@ fn main() {
         app::wait();
     }
 
-    // app::redraw();
 
     app.run().unwrap();
 }
